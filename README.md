@@ -1,4 +1,4 @@
-# Sentence Grapher
+# Sentence Diagrammer
 
 Type a sentence and watch it diagrammed Reed–Kellogg style, live in the browser. Then argue with it: drag any word onto
 another to re-attach it, or click a word to change its job.
@@ -66,11 +66,12 @@ scripts/deploy.sh root@203.0.113.7           # later: uploads the new build and 
 - Run it from Git Bash. It needs SSH key login to the server (`ssh-copy-id root@203.0.113.7` sets that up).
 - The first run picks the parse model from the server's memory: the transformer (`en_core_web_trf`) with 4 GB or
   more, the small model otherwise. `MODEL=en_core_web_sm scripts/deploy.sh … --setup` overrides it.
-- With a domain pointed at the server, `DOMAIN=grapher.example.com scripts/deploy.sh … --setup` switches Caddy to
+- With a domain pointed at the server, `DOMAIN=diagrams.example.com scripts/deploy.sh … --setup` switches Caddy to
   that name, and it fetches an HTTPS certificate by itself.
 - The parse server runs as the systemd service `sentence-grapher-parser`; its log is
   `journalctl -u sentence-grapher-parser`. The site lives in `/srv/sentence-grapher`, the server in
-  `/opt/sentence-grapher`, and the config in `deploy/`.
+  `/opt/sentence-grapher`, and the config in `deploy/`. (These internal names, like the npm package name, keep
+  the app's first name, Sentence Grapher.)
 
 ## What it does
 

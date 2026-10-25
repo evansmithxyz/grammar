@@ -5,7 +5,7 @@
 #   scripts/deploy.sh root@203.0.113.7 --setup   # first time: also installs Caddy, Python and spaCy
 #   scripts/deploy.sh root@203.0.113.7           # after that: just the new site and server code
 #
-# For --setup, MODEL=en_core_web_sm|en_core_web_trf and DOMAIN=grapher.example.com
+# For --setup, MODEL=en_core_web_sm|en_core_web_trf and DOMAIN=diagrams.example.com
 # are passed through to deploy/setup.sh.
 set -euo pipefail
 

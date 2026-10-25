@@ -1,7 +1,7 @@
-# Sentence Grapher on one address: the built site, with the spaCy parse server
+# Sentence Diagrammer on one address: the built site, with the spaCy parse server
 # under /api. scripts/deploy.sh installs this as /etc/caddy/Caddyfile.
 #
-# With DOMAIN set (DOMAIN=grapher.example.com scripts/deploy.sh ... --setup),
+# With DOMAIN set (DOMAIN=diagrams.example.com scripts/deploy.sh ... --setup),
 # ":80" becomes that name and Caddy gets an HTTPS certificate by itself.
 
 :80 {

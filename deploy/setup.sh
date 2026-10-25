@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Sets up a Debian or Ubuntu server for Sentence Grapher: Caddy for the site,
+# Sets up a Debian or Ubuntu server for Sentence Diagrammer: Caddy for the site,
 # and the spaCy parse server as a systemd service. Runs as root on the server;
 # scripts/deploy.sh uploads it and runs it when given --setup. Safe to run again.
 #
@@ -21,7 +21,7 @@ mem_gb=$(awk '/MemTotal/ { printf "%d", $2 / 1024 / 1024 + 0.5 }' /proc/meminfo)
 if [ -z "$MODEL" ]; then
   if [ "$mem_gb" -ge 4 ]; then MODEL=en_core_web_trf; else MODEL=en_core_web_sm; fi
 fi
-echo "== Sentence Grapher setup: $mem_gb GB of memory, model $MODEL, ${DOMAIN:-no domain (HTTP on port 80)}"
+echo "== Sentence Diagrammer setup: $mem_gb GB of memory, model $MODEL, ${DOMAIN:-no domain (HTTP on port 80)}"
 
 export DEBIAN_FRONTEND=noninteractive
 apt-get update -q

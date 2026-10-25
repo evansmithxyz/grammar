@@ -1,4 +1,4 @@
-"""Sentence Grapher parse server.
+"""Sentence Diagrammer parse server.
 
 Runs a spaCy pipeline (the transformer model by default) and returns, for
 every token, its part of speech, its head and the dependency label joining
@@ -25,7 +25,7 @@ MAX_CHARS = 1000
 # Loading takes a few seconds, so do it once when the server starts.
 nlp = spacy.load(MODEL, exclude=["ner"])
 
-app = FastAPI(title="Sentence Grapher parser")
+app = FastAPI(title="Sentence Diagrammer parser")
 app.add_middleware(
     CORSMiddleware,
     # the Vite dev server and `vite preview`
@@ -45,7 +45,7 @@ def model_info():
 
 @app.get("/")
 def index():
-    return {"service": "Sentence Grapher parser", "model": model_info(), "parse": "POST /parse {\"text\": \"...\"}"}
+    return {"service": "Sentence Diagrammer parser", "model": model_info(), "parse": "POST /parse {\"text\": \"...\"}"}
 
 
 @app.get("/health")

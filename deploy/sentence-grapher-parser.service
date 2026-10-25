@@ -1,5 +1,5 @@
 [Unit]
-Description=Sentence Grapher parse server (spaCy)
+Description=Sentence Diagrammer parse server (spaCy)
 After=network.target
 
 [Service]
