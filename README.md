@@ -103,7 +103,8 @@ scripts/deploy.sh root@203.0.113.7           # later: uploads the new build and 
   teaches a wrong answer.
 - **Practice mode.** The lines are drawn and the words are missing. Drag tiles into the slots and check your work.
 - **From scratch.** Nothing is drawn. Drag the main verb onto the board to start the baseline, then drag each word onto
-  the word it belongs to and pick its job; the diagram grows as you go. Check grades each word against the parser's
+  the word it belongs to and pick its job; the diagram grows as you go. To join parts, drop the conjunction on the first
+  part (it waits there on a dashed line), then drop the next part on the conjunction. Check grades each word against the parser's
   answer (compound parts may come in any order). Drag a word back to the tray to remove it and everything hanging from it.
 - **Three boards.** Chalkboard, notebook paper and textbook print. The page itself follows your light/dark setting.
   A diagram bigger than the board can be dragged around by its empty parts (or scrolled); on notebook paper the

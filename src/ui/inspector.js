@@ -124,6 +124,7 @@ export class Inspector {
       <ul>
         <li><b>Start the baseline:</b> drag the main verb onto the board.</li>
         <li><b>Add words:</b> drag each word onto the word it belongs to, then pick its job.</li>
+        <li><b>Join with a conjunction:</b> drop “and” or “but” on the first part, then drop the next part on the conjunction. For a second clause, that’s its verb; its subject goes on the verb.</li>
         <li><b>Change your mind:</b> drag a word onto a different word, or back to the tray.</li>
         <li><b>Check</b> outlines each word in green or red.</li>
       </ul>

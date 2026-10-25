@@ -2,7 +2,7 @@
 // builds the diagram themselves. These are the edits that mode makes, and the
 // grading against the parser's answer. All of them return new unit arrays.
 
-import { Graph, RELATIONS, relationChoices } from './graph.js';
+import { Graph, RELATIONS, NOMINAL_POS, relationChoices } from './graph.js';
 
 /** The answer's units with every word unattached. */
 export function blank(units) {
@@ -45,6 +45,31 @@ export function detachTree(units, id) {
     for (const u of units) if (u.head != null && gone.has(u.head) && !gone.has(u.id)) { gone.add(u.id); grew = true; }
   }
   return { units: units.map((u) => (gone.has(u.id) ? { ...u, head: null, rel: 'float' } : u)) };
+}
+
+/**
+ * A word dropped onto a conjunction joins the conjunction's word as its next
+ * compound part ("played" onto the "and" hanging from "sang"), and the
+ * conjunction moves to sit with it, as it does in a finished diagram. Only
+ * words of the same kind join: a verb to a verb, a noun or pronoun to another.
+ */
+export function joinAt(units, tokens, id, ccId) {
+  const g = new Graph(tokens, units);
+  const u = g.get(id), cc = g.get(ccId);
+  const h = cc ? g.head(cc) : null;
+  if (!u || !h || u.id === h.id) return { units };
+  const kind = (x) => (g.isVerbal(x) ? 'verb' : NOMINAL_POS.has(x.pos) ? 'noun' : x.pos);
+  if (kind(u) !== kind(h)) {
+    const what = kind(h) === 'verb' ? 'another verb' : kind(h) === 'noun' ? 'another noun or pronoun' : 'another word like it';
+    const then = kind(h) === 'verb' && kind(u) === 'noun' ? ' To start a second clause, drop its verb here first, then its subject on that verb.' : '';
+    return { units, error: `“${g.text(cc)}” joins “${g.text(h)}” to ${what}.${then}` };
+  }
+  // the compound's first part: joined parts all hang from it
+  let top = h;
+  for (let n = 0; n < 30 && top.rel === 'conj' && top.head != null; n++) top = g.head(top);
+  return {
+    units: units.map((x) => (x.id === id ? { ...x, head: top.id, rel: 'conj' } : x.id === ccId ? { ...x, head: id } : x)),
+  };
 }
 
 /**

@@ -4,7 +4,7 @@ import './styles.css';
 import { parse } from './nlp/parser.js';
 import { fromSpacy } from './nlp/spacy.js';
 import { Graph, RELATIONS, guessRelation, encodeUnits, decodeUnits } from './model/graph.js';
-import { blank, attachedIds, makeRoot, detachTree, jobChoices, grade } from './model/scratch.js';
+import { blank, attachedIds, makeRoot, detachTree, jobChoices, grade, joinAt } from './model/scratch.js';
 import { Guide } from './model/guided.js';
 import { reattach, setRelation, detach, mergeNext, split } from './model/edit.js';
 import { layoutGraph } from './diagram/layout.js';
@@ -708,6 +708,8 @@ async function placeWord(uid, headId, x, y) {
   const g = graph();
   const u = g.get(uid), h = g.get(headId);
   if (!u || !h || u.id === h.id) return;
+  // onto a conjunction: the word is the next part it joins, no job to pick
+  if (h.rel === 'cc') return edit((units) => joinAt(units, state.tokens, uid, headId));
   const keyRel = state.key?.find((k) => k.id === uid)?.rel;
   const labels = Object.fromEntries(Object.entries(RELATIONS).map(([k, v]) => [k, v.label]));
   const rel = await chooseJob($('role-menu'), {

@@ -2,9 +2,10 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { parse } from '../src/nlp/parser.js';
 import { Graph } from '../src/model/graph.js';
-import { blank, attachedIds, makeRoot, detachTree, jobChoices, grade } from '../src/model/scratch.js';
+import { blank, attachedIds, makeRoot, detachTree, jobChoices, grade, joinAt } from '../src/model/scratch.js';
+import { reattach } from '../src/model/edit.js';
 import { layoutGraph } from '../src/diagram/layout.js';
-import { measure } from './geometry.js';
+import { measure, assertLegible } from './geometry.js';
 
 const setup = (text) => {
   const { tokens, units } = parse(text);
@@ -96,4 +97,35 @@ test('a half-built diagram still lays out', () => {
   const g = new Graph(tokens, work.filter((u) => on.has(u.id)));
   const { prims } = layoutGraph(g, measure);
   assert.ok(prims.some((p) => p.text === 'rang'));
+});
+
+test('a compound sentence can be built conjunction first', () => {
+  // "and" goes on before the clause it joins: it waits under "sang" instead
+  // of floating, and the verb dropped on it becomes the second clause's verb
+  const { tokens, key, id } = setup('She sang, and he played the piano.');
+  const drawn = (work) => {
+    const on = attachedIds(work);
+    const { prims } = layoutGraph(new Graph(tokens, work.filter((u) => on.has(u.id))), measure);
+    assert.ok(!prims.some((p) => p.kind === 'loose'), 'nothing floats loose');
+    assertLegible(prims);
+    return prims;
+  };
+  let work = makeRoot(blank(key), id('sang')).units;
+  work = reattach(work, tokens, id('She'), id('sang'), 'subj').units;
+  work = reattach(work, tokens, id('and'), id('sang'), 'cc').units;
+  assert.ok(drawn(work).some((p) => p.t === 'text' && p.text === 'and'), 'the waiting conjunction is drawn');
+
+  const wrongKind = joinAt(work, tokens, id('he'), id('and'));
+  assert.match(wrongKind.error, /joins “sang” to another verb/);
+  assert.equal(wrongKind.units, work, 'nothing changes');
+
+  work = joinAt(work, tokens, id('played'), id('and')).units;
+  assert.equal(work.find((u) => u.id === id('played')).rel, 'conj');
+  assert.equal(work.find((u) => u.id === id('and')).head, id('played'), 'the conjunction moves to the part it introduces');
+  drawn(work);
+  work = reattach(work, tokens, id('he'), id('played'), 'subj').units;
+  work = reattach(work, tokens, id('piano'), id('played'), 'dobj').units;
+  work = reattach(work, tokens, id('the'), id('piano'), 'mod').units;
+  drawn(work);
+  assert.ok([...grade(work, key, tokens).values()].every((v) => v === 'right'));
 });

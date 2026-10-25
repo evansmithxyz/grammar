@@ -214,6 +214,7 @@ class Layout {
   hangingKids(u, asRow) {
     const g = this.g;
     return g.kids(u).filter((k) => {
+      if (this.waitingConjunction(k)) return true;
       if (SKIP_RELS.has(k.rel)) return false;
       if (asRow && ROW_RELS.has(k.rel)) return false;
       if (k.rel === 'appos') return false;
@@ -225,6 +226,17 @@ class Layout {
   }
 
   isClauseLink(k) { return (k.rel === 'advcl' || k.rel === 'relcl') && this.g.isVerbal(k); }
+
+  /**
+   * A conjunction with nothing joined to its word yet, as when building a
+   * diagram from scratch ("and" dropped on "sang" before "played"). It hangs
+   * under the word on a dashed slant, waiting for the next part.
+   */
+  waitingConjunction(k) {
+    const g = this.g;
+    const h = g.head(k);
+    return k.rel === 'cc' && !!h && h.rel !== 'conj' && !g.kids(h, 'conj').length;
+  }
 
   /**
    * Drawn as a preposition, with its object at the foot of the slant. Goes by
@@ -259,6 +271,7 @@ class Layout {
 
   hanging(u, opts = {}) {
     const g = this.g;
+    if (this.waitingConjunction(u)) return this.slant(g.text(u), u.id, 'word', 44, true).B;
     if (this.isClauseLink(u)) {
       // a dashed slant (carrying the subordinator) leads down to the clause,
       // which is hung below everything once the clause around it is laid out
