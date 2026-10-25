@@ -1,0 +1,22 @@
+# Sentence Grapher on one address: the built site, with the spaCy parse server
+# under /api. scripts/deploy.sh installs this as /etc/caddy/Caddyfile.
+#
+# With DOMAIN set (DOMAIN=grapher.example.com scripts/deploy.sh ... --setup),
+# ":80" becomes that name and Caddy gets an HTTPS certificate by itself.
+
+:80 {
+	encode zstd gzip
+
+	# the parse server sees /parse and /health, without the /api prefix
+	handle_path /api/* {
+		reverse_proxy 127.0.0.1:8000
+	}
+
+	handle {
+		root * /srv/sentence-grapher
+		file_server
+	}
+
+	# file names under /assets change with every build, so they can be cached for good
+	header /assets/* Cache-Control "public, max-age=31536000, immutable"
+}

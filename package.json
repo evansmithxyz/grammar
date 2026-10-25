@@ -1,0 +1,24 @@
+{
+  "name": "sentence-grapher",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test tests/*.test.js",
+    "build:artifact": "vite build && node scripts/artifact.mjs",
+    "server": "server\\.venv\\Scripts\\python.exe -m uvicorn app:app --app-dir server --port 8000"
+  },
+  "dependencies": {
+    "@fontsource/atkinson-hyperlegible": "^5.3.0",
+    "@fontsource/newsreader": "^5.3.0",
+    "@fontsource/patrick-hand": "^5.3.0",
+    "compromise": "^14.19.0",
+    "roughjs": "^4.6.6"
+  },
+  "devDependencies": {
+    "vite": "^8.3.5"
+  }
+}

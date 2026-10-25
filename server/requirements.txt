@@ -1,0 +1,5 @@
+spacy>=3.8,<3.9
+spacy-transformers
+fastapi
+uvicorn[standard]
+# then: python -m spacy download en_core_web_trf

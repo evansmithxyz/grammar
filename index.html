@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sentence Grapher</title>
+    <meta name="description" content="Type a sentence and see it diagrammed Reed–Kellogg style. Learn it step by step in Guided mode, drag words to fix the parse, practice filling in diagrams, and export SVG or PNG." />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2312151b'/%3E%3Cpath d='M4 15h24M13 8v13M18 15l5 9' stroke='%23e7eaf0' stroke-width='2.6' stroke-linecap='round' fill='none'/%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="wrap topbar-inner">
+        <a class="brand" href="./" aria-label="Sentence Grapher, start over">
+          <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M3 15h26M12 7v14M18 15l5 9" /></svg>
+          <span>Sentence Grapher</span>
+        </a>
+        <p class="tagline">Reed–Kellogg diagrams, drawn as you type</p>
+        <div class="board-pick">
+          <span class="field-label" id="board-label">Board</span>
+          <div class="seg" role="radiogroup" aria-labelledby="board-label" id="theme-seg">
+            <button role="radio" data-board="chalk" aria-checked="true">Chalk</button>
+            <button role="radio" data-board="notebook" aria-checked="false">Notebook</button>
+            <button role="radio" data-board="print" aria-checked="false">Textbook</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="composer" aria-label="Sentence">
+        <form class="input-wrap" id="form">
+          <label for="sentence" class="sr-only">Sentence to diagram</label>
+          <input id="sentence" autocomplete="off" spellcheck="true" maxlength="1000" placeholder="Type a sentence…" />
+          <button class="btn primary" type="submit">Diagram</button>
+        </form>
+        <div class="composer-meta">
+          <label class="field-label" for="examples">Examples</label>
+          <select id="examples"></select>
+          <span class="parser" id="parser-wrap">
+            <label class="field-label" for="parser">Parser</label>
+            <select id="parser">
+              <option value="server">spaCy server</option>
+              <option value="rules">Built-in rules</option>
+            </select>
+            <span class="parser-status" id="parser-status"></span>
+          </span>
+          <p class="note" id="parser-note">Parsed in your browser by a set of grammar rules. When it gets a word wrong, drag the word where it belongs.</p>
+        </div>
+      </section>
+
+      <div class="strip" id="strip" aria-label="Sentence with parts marked"></div>
+
+      <div class="work">
+        <section class="board-panel" aria-label="Diagram">
+          <div class="toolbar">
+            <div class="seg" role="tablist" aria-label="View" id="view-seg">
+              <button role="tab" data-view="rk" aria-selected="true">Diagram</button>
+              <button role="tab" data-view="arcs" aria-selected="false">Arcs</button>
+            </div>
+            <div class="seg" role="tablist" aria-label="Mode" id="mode-seg">
+              <button role="tab" data-mode="explore" aria-selected="true">Explore</button>
+              <button role="tab" data-mode="guided" aria-selected="false">Guided</button>
+              <button role="tab" data-mode="practice" aria-selected="false">Practice</button>
+              <button role="tab" data-mode="scratch" aria-selected="false">From scratch</button>
+            </div>
+            <div class="tools">
+              <button class="icon" id="undo" title="Undo (Ctrl+Z)" aria-label="Undo" disabled>↶</button>
+              <button class="icon" id="redo" title="Redo (Ctrl+Shift+Z)" aria-label="Redo" disabled>↷</button>
+              <button class="icon" id="reset" title="Back to the automatic parse" aria-label="Reset to automatic parse" disabled>⟲</button>
+              <button class="icon" id="replay" title="Draw it again" aria-label="Draw it again">▶</button>
+              <span class="sep" aria-hidden="true"></span>
+              <button class="icon" id="zoom-out" title="Zoom out" aria-label="Zoom out">−</button>
+              <button class="icon" id="zoom-fit" title="Fit to width" aria-label="Fit to width">⤢</button>
+              <button class="icon" id="zoom-in" title="Zoom in" aria-label="Zoom in">+</button>
+              <span class="sep" aria-hidden="true"></span>
+              <button class="btn" id="dl-svg" title="Save the diagram as SVG">SVG</button>
+              <button class="btn" id="dl-png" title="Save the diagram as PNG">PNG</button>
+              <button class="btn" id="share" title="Copy a link to this diagram">Copy link</button>
+            </div>
+          </div>
+          <div class="board" id="board" data-board="chalk">
+            <div class="stage" id="stage">
+              <svg id="diagram" role="img" aria-label="Sentence diagram"></svg>
+              <p class="dropzone" id="dropzone" hidden>Drag the main verb here to start the baseline.</p>
+            </div>
+            <div class="practice-bar guide-bar" id="guide-bar" hidden>
+              <div class="guide-top">
+                <span class="guide-count" id="guide-count"></span>
+                <span class="guide-meter" aria-hidden="true"><span id="guide-fill"></span></span>
+              </div>
+              <h3 class="guide-q" id="guide-q"></h3>
+              <p class="guide-ask" id="guide-ask"></p>
+              <div class="guide-words" id="guide-words" aria-label="Words in the sentence"></div>
+              <p class="guide-feedback" id="guide-feedback" aria-live="polite"></p>
+              <div class="practice-actions">
+                <button class="btn" data-act="restart">Start over</button>
+                <button class="btn" data-act="new" id="gd-new">New sentence</button>
+                <button class="btn" data-act="show" id="gd-show">Show me</button>
+                <button class="btn primary" data-act="hint" id="gd-hint">Hint</button>
+              </div>
+            </div>
+            <div class="practice-bar" id="practice-bar" hidden>
+              <div class="tray" id="tray" aria-label="Word tiles"></div>
+              <div class="practice-actions">
+                <span class="score" id="score"></span>
+                <button class="btn" id="pr-reveal">Reveal</button>
+                <button class="btn" id="pr-new">New sentence</button>
+                <button class="btn primary" id="pr-check">Check</button>
+              </div>
+            </div>
+            <div class="practice-bar" id="scratch-bar" hidden>
+              <p class="tray-label">Words to place</p>
+              <div class="tray" id="scratch-tray" aria-label="Words to place"></div>
+              <div class="practice-actions">
+                <span class="score" id="scratch-score"></span>
+                <button class="btn" id="sc-reset">Start over</button>
+                <button class="btn" id="sc-answer">Show answer</button>
+                <button class="btn" id="sc-new">New sentence</button>
+                <button class="btn primary" id="sc-check">Check</button>
+              </div>
+            </div>
+          </div>
+          <div class="statusbar">
+            <span id="status"></span>
+            <span id="board-hint"></span>
+          </div>
+        </section>
+
+        <aside class="side">
+          <div class="tabs" role="tablist" aria-label="Side panel">
+            <button role="tab" id="tab-word" aria-controls="inspector" aria-selected="true">Word</button>
+            <button role="tab" id="tab-key" aria-controls="key" aria-selected="false">Key</button>
+          </div>
+          <div class="panel" id="inspector" role="tabpanel" aria-labelledby="tab-word" aria-live="polite"></div>
+          <div class="panel" id="key" role="tabpanel" aria-labelledby="tab-key" hidden>
+            <p class="key-intro">Every line on the diagram means something. Each example below is drawn by the same engine.</p>
+            <div class="key-list" id="glyphs"></div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="wrap foot">
+      <p>
+        Parsing by <a href="https://github.com/spencermountain/compromise">compromise</a> and a hand-written clause
+        parser. Lines by <a href="https://roughjs.com">Rough.js</a>. Diagram conventions from Reed &amp; Kellogg,
+        <i>Higher Lessons in English</i> (1877).
+      </p>
+    </footer>
+
+    <div class="role-menu" id="role-menu" role="dialog" aria-label="Choose the word's job" hidden></div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

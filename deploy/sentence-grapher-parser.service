@@ -1,0 +1,18 @@
+[Unit]
+Description=Sentence Grapher parse server (spaCy)
+After=network.target
+
+[Service]
+# SPACY_MODEL (and DOMAIN, for the Caddyfile) are written here by deploy/setup.sh
+EnvironmentFile=-/etc/sentence-grapher.env
+Environment=HF_HOME=/var/cache/sentence-grapher
+ExecStart=/opt/sentence-grapher/.venv/bin/uvicorn app:app --app-dir /opt/sentence-grapher/server --host 127.0.0.1 --port 8000
+Restart=on-failure
+# runs as a throwaway user with no write access outside its cache directory
+DynamicUser=yes
+CacheDirectory=sentence-grapher
+# the transformer model takes a while to load on a CPU
+TimeoutStartSec=180
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,6 @@
+# Text files are stored with LF. The deploy scripts and server config run on
+# Linux (and under Git Bash), where CRLF line endings break them, so they keep
+# LF in the working copy too.
+* text=auto
+*.sh text eol=lf
+deploy/* text eol=lf
