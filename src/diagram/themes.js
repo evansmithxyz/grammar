@@ -92,6 +92,9 @@ export function roleFamily(rel, pos) {
 
 /** The family a unit is drawn in, following compound parts back to the first item. */
 export function unitFamily(g, u) {
+  // a verb with its own subject heads a clause: it's a verb whatever job the
+  // clause does ("I know that he IS right", "except what MAY BE necessary")
+  if (g.isVerbal(u) && g.kid(u, 'subj')) return 'verb';
   let cur = u;
   for (let n = 0; n < 20 && cur && cur.rel === 'conj'; n++) {
     const h = g.head(cur);

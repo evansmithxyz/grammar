@@ -100,8 +100,9 @@ export class Strip {
     let c = u;
     for (let n = 0; n < 20 && c && c.rel === 'conj'; n++) c = g.head(c);
     const r0 = c ? c.rel : null;
-    if (r0 === 'subj') return 'under';
+    // a clause's verb is underlined twice even when the clause is a subject ("What he SAID surprised me")
     if (unitFamily(g, u) === 'verb' && (u.rel === 'root' || u.rel === 'conj' || u.rel === 'advcl' || u.rel === 'relcl' || g.kid(u, 'subj'))) return 'double';
+    if (r0 === 'subj') return 'under';
     if (r0 === 'dobj' || r0 === 'iobj') return 'circle';
     if (r0 === 'pred' || r0 === 'ocomp') return 'box';
     return null;
