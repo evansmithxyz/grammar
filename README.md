@@ -19,6 +19,10 @@ npm run build:artifact  # also writes dist/artifact.html for publishing as a cla
 
 `dist/` is plain static files; any static host works.
 
+`node scripts/demo.mjs` records a demo video of the live site (`DEMO_URL=http://localhost:5173` for a local one): a
+scripted tour of every feature in headless Chrome, with captions and a visible cursor, saved as
+`demo/sentence-diagrammer-demo.mp4` (1080p, about 2¾ minutes). It needs Chrome and ffmpeg.
+
 ## Optional: the spaCy parse server
 
 The built-in parser is a set of hand-written rules. For better parses, run spaCy's transformer model
