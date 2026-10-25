@@ -94,6 +94,12 @@ scripts/deploy.sh root@203.0.113.7           # later: uploads the new build and 
   explained from what the word really does ("“dog” is inside the phrase “over the lazy dog”. The subject is never
   inside a prepositional phrase."). Hint gives the question to ask yourself, then narrows the choices to three;
   Show me answers the step.
+- **Levels.** Guided, Practice and From scratch can walk through 13 levels of sentences, from subjects and verbs
+  through objects, phrases, compounds, verbals and the three kinds of clause (`src/levels.js`). Pick a level above
+  the board; "Next sentence" goes to the next one you haven't finished in that mode, and on to the next level once
+  they're all done. Each sentence's dot fills in when you finish it (progress is kept in the browser, per mode).
+  Every level sentence is tested to parse the same with the built-in rules and with spaCy, so a lesson never
+  teaches a wrong answer.
 - **Practice mode.** The lines are drawn and the words are missing. Drag tiles into the slots and check your work.
 - **From scratch.** Nothing is drawn. Drag the main verb onto the board to start the baseline, then drag each word onto
   the word it belongs to and pick its job; the diagram grows as you go. Check grades each word against the parser's

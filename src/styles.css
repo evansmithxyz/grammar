@@ -263,6 +263,27 @@ select {
   border-bottom: 1px solid var(--line);
 }
 .tools { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 3px; margin-left: auto; }
+
+/* lessons: a level picker and one dot per sentence, above the board in the practice modes */
+.lesson { padding: 8px 12px 9px; border-bottom: 1px solid var(--line); background: var(--surface-2); }
+.lesson-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
+.lesson select { min-height: 30px; padding: 3px 8px; max-width: 100%; }
+.level-dots { display: flex; flex-wrap: wrap; gap: 6px; }
+.level-dots .dot {
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  border: 1.5px solid var(--line-strong);
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+}
+.level-dots .dot:hover { border-color: #e0b000; }
+.level-dots .dot:focus-visible { outline: 2px solid #e0b000; outline-offset: 2px; }
+.level-dots .dot.done { border-color: var(--ok); background: var(--ok); }
+.level-dots .dot[aria-current='true'] { box-shadow: 0 0 0 2px var(--surface-2), 0 0 0 4px #e0b000; }
+.level-count { font-size: 12.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.level-about { margin: 5px 0 0; font-size: 13px; color: var(--muted); }
 .tools .sep { width: 1px; height: 20px; margin: 0 4px; background: var(--line); }
 .statusbar {
   display: flex;

@@ -208,6 +208,12 @@ export function fromSpacy(text, data) {
   }
 
   for (const u of units) {
+    // an object complement needs an object to describe: spaCy's "oprd" after a
+    // linking verb ("He seems tired") is a subject complement
+    if (u.rel === 'ocomp' && u.headRef && !kidsOf(u.headRef, 'dobj').length) u.rel = 'pred';
+    // "to buy milk" with no subject of its own is an infinitive phrase, not an
+    // adverb clause; the diagram hangs it on a slant like a phrase
+    if (u.rel === 'advcl' && u.verbal && !ownSubject(u) && kidsOf(u, 'mark').some((m) => /^to$/i.test(tokens[m.anchor].text))) u.rel = 'mod';
     // "There is a cat": the expletive fills the slot; the real subject is the complement
     if (u.verbal && kidsOf(u, 'expl').length && !kidsOf(u, 'subj').length) {
       const real = kidsOf(u, 'pred')[0];

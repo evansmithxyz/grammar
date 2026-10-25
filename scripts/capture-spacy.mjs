@@ -1,8 +1,11 @@
 // Records the parse server's answers for a set of sentences in
-// tests/fixtures/spacy.json, so the conversion tests run without the server.
+// tests/fixtures/spacy.json, and for the level sentences in
+// tests/fixtures/levels.json, so the tests run without the server.
 // Start the server (npm run server), then: node scripts/capture-spacy.mjs
+// (PARSER_URL=https://your.site/api records from a deployed server instead.)
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { EXAMPLES } from '../src/examples.js';
+import { LEVELS } from '../src/levels.js';
 
 const URL = (process.env.PARSER_URL || 'http://localhost:8000').replace(/\/$/, '');
 const EXTRA = [
@@ -23,18 +26,23 @@ const EXTRA = [
   'He shall have Power, by and with the Advice and Consent of the Senate, to make Treaties, provided two thirds of the Senators present concur; and he shall nominate, and by and with the Advice and Consent of the Senate, shall appoint Ambassadors, other public Ministers and Consuls, Judges of the supreme Court, and all other Officers of the United States, whose Appointments are not herein otherwise provided for, and which shall be established by Law: but the Congress may by Law vest the Appointment of such inferior Officers, as they think proper, in the President alone, in the Courts of Law, or in the Heads of Departments.',
 ];
 
-const out = {};
-for (const text of [...EXAMPLES.map((e) => e.text), ...EXTRA]) {
-  const r = await fetch(`${URL}/parse`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ text }),
-  });
-  if (!r.ok) throw new Error(`${r.status} for “${text}”`);
-  const data = await r.json();
-  out[text] = { model: data.model, tokens: data.tokens };
-  console.log(`${String(data.ms).padStart(6)} ms  ${text}`);
+async function capture(texts, file) {
+  const out = {};
+  for (const text of texts) {
+    const r = await fetch(`${URL}/parse`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ text }),
+    });
+    if (!r.ok) throw new Error(`${r.status} for “${text}”`);
+    const data = await r.json();
+    out[text] = { model: data.model, tokens: data.tokens };
+    console.log(`${String(data.ms).padStart(6)} ms  ${text}`);
+  }
+  mkdirSync('tests/fixtures', { recursive: true });
+  writeFileSync(file, `${JSON.stringify(out, null, 1)}\n`);
+  console.log(`saved ${Object.keys(out).length} parses to ${file}`);
 }
-mkdirSync('tests/fixtures', { recursive: true });
-writeFileSync('tests/fixtures/spacy.json', `${JSON.stringify(out, null, 1)}\n`);
-console.log(`saved ${Object.keys(out).length} parses to tests/fixtures/spacy.json`);
+
+await capture([...EXAMPLES.map((e) => e.text), ...EXTRA], 'tests/fixtures/spacy.json');
+await capture(LEVELS.flatMap((l) => l.sentences), 'tests/fixtures/levels.json');

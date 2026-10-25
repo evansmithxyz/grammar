@@ -12,6 +12,7 @@ import { renderDiagram, animateDraw, makeMeasurer } from './diagram/render.js';
 import { renderArcs } from './diagram/arcs.js';
 import { THEMES } from './diagram/themes.js';
 import { EXAMPLES, GROUPS, GROUP_LABELS } from './examples.js';
+import { LEVELS, findLesson } from './levels.js';
 import { Strip } from './ui/strip.js';
 import { Inspector } from './ui/inspector.js';
 import { attachWordDrag } from './ui/drag.js';
@@ -19,6 +20,7 @@ import { Practice } from './ui/practice.js';
 import { ScratchTray, chooseJob } from './ui/scratch.js';
 import { GuideBar } from './ui/guided.js';
 import { attachPan } from './ui/pan.js';
+import { LessonBar } from './ui/lessons.js';
 import { renderLegend } from './ui/legend.js';
 import { svgBlob, pngBlob, downloadLink, fileName } from './ui/export.js';
 
@@ -70,7 +72,26 @@ const state = {
   grade: null, // build-from-scratch: Map of unit id → 'right' | 'wrong' | 'unplaced'
   guide: null, // guided mode: the learner's progress through the questions
   feedback: null, // guided mode: what the last answer earned
+  // the practice modes walk through this level's sentences (null: random examples)
+  levelId: (() => { const id = store.get('level', LEVELS[0].id); return LEVELS.some((l) => l.id === id) ? id : null; })(),
 };
+
+// Which level sentences have been finished, per mode: { guided: { sv: [0, 2] }, ... }
+const progress = {
+  all: (() => { try { return JSON.parse(store.get('progress', '{}')) || {}; } catch { return {}; } })(),
+  done(mode, levelId) { return new Set(this.all[mode]?.[levelId] || []); },
+  mark(mode, text) {
+    const lesson = findLesson(text);
+    if (!lesson) return false;
+    const set = this.done(mode, lesson.level.id);
+    if (set.has(lesson.index)) return false;
+    set.add(lesson.index);
+    this.all[mode] = { ...this.all[mode], [lesson.level.id]: [...set].sort((a, b) => a - b) };
+    store.set('progress', JSON.stringify(this.all));
+    return true;
+  },
+};
+const PRACTICE_MODES = new Set(['guided', 'practice', 'scratch']);
 if (!THEMES[state.theme]) state.theme = 'chalk';
 let measure = makeMeasurer(THEMES[state.theme]);
 
@@ -97,6 +118,43 @@ const inspector = new Inspector($('inspector'), {
 
 const practice = new Practice({ tray: $('tray'), score: $('score') });
 const scratchTray = new ScratchTray({ tray: $('scratch-tray'), board: $('board'), onDrop: (uid, at) => dropTile(uid, at) });
+const lessonBar = new LessonBar($('lesson'), {
+  onLevel: (id) => {
+    state.levelId = id;
+    store.set('level', id || 'mixed');
+    nextPractice();
+  },
+  onPick: (i) => {
+    const level = LEVELS.find((l) => l.id === state.levelId);
+    if (level) loadSentence(level.sentences[i]);
+  },
+});
+
+/** The lesson bar: shown in the practice modes, with this mode's progress through the level. */
+function renderLesson() {
+  const show = PRACTICE_MODES.has(state.mode);
+  $('lesson').hidden = !show;
+  const label = state.levelId ? 'Next sentence' : 'New sentence';
+  for (const id of ['pr-new', 'sc-new', 'gd-new']) $(id).textContent = label;
+  if (!show) return;
+  const lesson = findLesson(state.text);
+  lessonBar.render({
+    levelId: state.levelId,
+    current: lesson && lesson.level.id === state.levelId ? lesson.index : -1,
+    done: progress.done(state.mode, state.levelId),
+  });
+}
+
+/** A level sentence finished in this mode: fill in its dot, and say so if that finished the level. */
+function finishSentence() {
+  if (!progress.mark(state.mode, state.text)) return;
+  const lesson = findLesson(state.text);
+  renderLesson();
+  if (progress.done(state.mode, lesson.level.id).size === lesson.level.sentences.length) {
+    toast(`Level ${LEVELS.indexOf(lesson.level) + 1} done: ${lesson.level.title}.`);
+  }
+}
+
 const guideBar = new GuideBar($('guide-bar'), {
   onAnswer: (choice) => guideAnswer(choice),
   onHint: () => guideStep((gd) => gd.hint()),
@@ -164,6 +222,7 @@ function render({ animate = false, flip = false } = {}) {
   $('dropzone').hidden = gd ? !state.units.length || gd.placed.size > 0
     : !scratch || !state.units.length || [...placed].some((id) => g.get(id)?.rel === 'root');
   updateButtons();
+  renderLesson();
   $('board-hint').textContent = !state.units.length ? ''
     : state.mode === 'practice' ? 'Drag each tile onto its slot, then check.'
     : scratch ? 'Drag words from the tray onto the board. Drag a word back to the tray to remove it.'
@@ -612,6 +671,7 @@ $('mode-seg').addEventListener('click', (e) => {
 /** The current parse becomes the answer key; every word goes to the tray. */
 function startScratch() {
   state.key = state.units;
+  state.answerShown = false;
   state.units = blank(state.key);
   state.history = [];
   state.future = [];
@@ -677,9 +737,11 @@ $('sc-check').addEventListener('click', () => {
   if (!state.key) return;
   state.grade = grade(state.units, state.key, state.tokens);
   render();
+  if (!state.answerShown && [...state.grade.values()].every((v) => v === 'right')) finishSentence();
 });
 $('sc-answer').addEventListener('click', () => {
   if (!state.key) return;
+  state.answerShown = true;
   edit(() => ({ units: state.key.map((u) => ({ ...u })) }));
   state.grade = grade(state.units, state.key, state.tokens);
   render({ animate: true });
@@ -709,22 +771,46 @@ function guideStep(fn) {
   render();
   guideBar.flash(fb.ids, fb.type);
   const added = new Set([...gd.placed].filter((id) => !before.has(id)));
-  if (gd.done) animateDraw(svg);
-  else if (added.size) animateDraw(svg, { only: added });
+  if (gd.done) {
+    animateDraw(svg);
+    finishSentence();
+  } else if (added.size) animateDraw(svg, { only: added });
 }
 
 function guideAnswer(choice) {
   guideStep((gd) => gd.answer(choice));
 }
 
+/**
+ * The next sentence to practise: with a level picked, the next one in it not
+ * yet done in this mode (once all are, the next level); otherwise a random example.
+ */
 function nextPractice() {
-  const pool = EXAMPLES.filter((e) => e.text !== state.text);
-  const ex = pool[Math.floor(Math.random() * pool.length)];
-  input.value = ex.text;
-  setText(ex.text, { animate: true });
+  const level = LEVELS.find((l) => l.id === state.levelId);
+  if (!level) {
+    const pool = EXAMPLES.filter((e) => e.text !== state.text);
+    return loadSentence(pool[Math.floor(Math.random() * pool.length)].text);
+  }
+  const n = level.sentences.length;
+  const lesson = findLesson(state.text);
+  const at = lesson && lesson.level === level ? lesson.index : -1;
+  const done = progress.done(state.mode, level.id);
+  for (let k = 1; k <= n; k++) {
+    const i = (at + k) % n;
+    if (!done.has(i) && i !== at) return loadSentence(level.sentences[i]);
+  }
+  // every sentence here is done: on to the next level, if there is one
+  const next = LEVELS[LEVELS.indexOf(level) + 1];
+  if (next && done.size === n) {
+    state.levelId = next.id;
+    store.set('level', next.id);
+    toast(`On to level ${LEVELS.indexOf(next) + 1}: ${next.title}.`);
+    return loadSentence(next.sentences[0]);
+  }
+  loadSentence(level.sentences[(at + 1) % n]);
 }
 $('pr-new').addEventListener('click', nextPractice);
-$('pr-check').addEventListener('click', () => practice.check());
+$('pr-check').addEventListener('click', () => { if (practice.check()) finishSentence(); });
 $('pr-reveal').addEventListener('click', () => practice.reveal());
 
 $('theme-seg').addEventListener('click', (e) => {

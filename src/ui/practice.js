@@ -22,6 +22,7 @@ export class Practice {
       this.tiles = shuffle(slots.map((s, i) => ({ text: s.text, i })));
       this.placed.clear();
       this.checked = false;
+      this.revealed = false;
     }
     this.renderTray();
     this.paint();
@@ -88,13 +89,16 @@ export class Practice {
     window.addEventListener('pointerup', up);
   }
 
+  /** Mark the slots right or wrong. Returns true when every slot is right (and wasn't revealed). */
   check() {
     this.checked = true;
     this.paint();
-    this.updateScore();
+    const { right, total } = this.updateScore();
+    return !this.revealed && total > 0 && right === total;
   }
 
   reveal() {
+    this.revealed = true;
     this.placed.clear();
     const free = [...this.tiles];
     for (const s of this.slots) {
@@ -109,13 +113,14 @@ export class Practice {
   updateScore() {
     const total = this.slots.length;
     const filled = this.placed.size;
-    if (!this.checked) { this.score.textContent = `${filled} / ${total} placed`; return; }
+    if (!this.checked) { this.score.textContent = `${filled} / ${total} placed`; return { right: 0, total }; }
     let right = 0;
     for (const s of this.slots) {
       const tile = this.tiles.find((t) => t.i === this.placed.get(s.uid));
       if (tile && norm(tile.text) === norm(s.text)) right++;
     }
     this.score.textContent = right === total ? `All ${total} right. Nicely graphed.` : `${right} of ${total} right`;
+    return { right, total };
   }
 }
 

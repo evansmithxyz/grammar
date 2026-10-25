@@ -1,0 +1,7373 @@
+{
+ "Birds sing.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "Birds",
+    "start": 0,
+    "end": 5,
+    "ws": " ",
+    "lemma": "bird",
+    "pos": "NOUN",
+    "tag": "NNS",
+    "dep": "nsubj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "sing",
+    "start": 6,
+    "end": 10,
+    "ws": "",
+    "lemma": "sing",
+    "pos": "VERB",
+    "tag": "VBP",
+    "dep": "ROOT",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": ".",
+    "start": 10,
+    "end": 11,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 1,
+    "sent": 0
+   }
+  ]
+ },
+ "The baby cried.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "The",
+    "start": 0,
+    "end": 3,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "baby",
+    "start": 4,
+    "end": 8,
+    "ws": " ",
+    "lemma": "baby",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "nsubj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "cried",
+    "start": 9,
+    "end": 14,
+    "ws": "",
+    "lemma": "cry",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": ".",
+    "start": 14,
+    "end": 15,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 2,
+    "sent": 0
+   }
+  ]
+ },
+ "Snow fell.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "Snow",
+    "start": 0,
+    "end": 4,
+    "ws": " ",
+    "lemma": "snow",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "nsubj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "fell",
+    "start": 5,
+    "end": 9,
+    "ws": "",
+    "lemma": "fall",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": ".",
+    "start": 9,
+    "end": 10,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 1,
+    "sent": 0
+   }
+  ]
+ },
+ "The bell rang.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "The",
+    "start": 0,
+    "end": 3,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "bell",
+    "start": 4,
+    "end": 8,
+    "ws": " ",
+    "lemma": "bell",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "nsubj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "rang",
+    "start": 9,
+    "end": 13,
+    "ws": "",
+    "lemma": "ring",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": ".",
+    "start": 13,
+    "end": 14,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 2,
+    "sent": 0
+   }
+  ]
+ },
+ "Dogs bark.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "Dogs",
+    "start": 0,
+    "end": 4,
+    "ws": " ",
+    "lemma": "dog",
+    "pos": "NOUN",
+    "tag": "NNS",
+    "dep": "nsubj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "bark",
+    "start": 5,
+    "end": 9,
+    "ws": "",
+    "lemma": "bark",
+    "pos": "VERB",
+    "tag": "VBP",
+    "dep": "ROOT",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": ".",
+    "start": 9,
+    "end": 10,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 1,
+    "sent": 0
+   }
+  ]
+ },
+ "The children laughed.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "The",
+    "start": 0,
+    "end": 3,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "children",
+    "start": 4,
+    "end": 12,
+    "ws": " ",
+    "lemma": "child",
+    "pos": "NOUN",
+    "tag": "NNS",
+    "dep": "nsubj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "laughed",
+    "start": 13,
+    "end": 20,
+    "ws": "",
+    "lemma": "laugh",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": ".",
+    "start": 20,
+    "end": 21,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 2,
+    "sent": 0
+   }
+  ]
+ },
+ "The tall man walked slowly.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "The",
+    "start": 0,
+    "end": 3,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "tall",
+    "start": 4,
+    "end": 8,
+    "ws": " ",
+    "lemma": "tall",
+    "pos": "ADJ",
+    "tag": "JJ",
+    "dep": "amod",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "man",
+    "start": 9,
+    "end": 12,
+    "ws": " ",
+    "lemma": "man",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "nsubj",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "walked",
+    "start": 13,
+    "end": 19,
+    "ws": " ",
+    "lemma": "walk",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "slowly",
+    "start": 20,
+    "end": 26,
+    "ws": "",
+    "lemma": "slowly",
+    "pos": "ADV",
+    "tag": "RB",
+    "dep": "advmod",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": ".",
+    "start": 26,
+    "end": 27,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 3,
+    "sent": 0
+   }
+  ]
+ },
+ "A small brown bird sang sweetly.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "A",
+    "start": 0,
+    "end": 1,
+    "ws": " ",
+    "lemma": "a",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "small",
+    "start": 2,
+    "end": 7,
+    "ws": " ",
+    "lemma": "small",
+    "pos": "ADJ",
+    "tag": "JJ",
+    "dep": "amod",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "brown",
+    "start": 8,
+    "end": 13,
+    "ws": " ",
+    "lemma": "brown",
+    "pos": "ADJ",
+    "tag": "JJ",
+    "dep": "amod",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "bird",
+    "start": 14,
+    "end": 18,
+    "ws": " ",
+    "lemma": "bird",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "nsubj",
+    "head": 4,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "sang",
+    "start": 19,
+    "end": 23,
+    "ws": " ",
+    "lemma": "sing",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 4,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "sweetly",
+    "start": 24,
+    "end": 31,
+    "ws": "",
+    "lemma": "sweetly",
+    "pos": "ADV",
+    "tag": "RB",
+    "dep": "advmod",
+    "head": 4,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": ".",
+    "start": 31,
+    "end": 32,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 4,
+    "sent": 0
+   }
+  ]
+ },
+ "The old car stopped suddenly.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "The",
+    "start": 0,
+    "end": 3,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "old",
+    "start": 4,
+    "end": 7,
+    "ws": " ",
+    "lemma": "old",
+    "pos": "ADJ",
+    "tag": "JJ",
+    "dep": "amod",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "car",
+    "start": 8,
+    "end": 11,
+    "ws": " ",
+    "lemma": "car",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "nsubj",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "stopped",
+    "start": 12,
+    "end": 19,
+    "ws": " ",
+    "lemma": "stop",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "suddenly",
+    "start": 20,
+    "end": 28,
+    "ws": "",
+    "lemma": "suddenly",
+    "pos": "ADV",
+    "tag": "RB",
+    "dep": "advmod",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": ".",
+    "start": 28,
+    "end": 29,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 3,
+    "sent": 0
+   }
+  ]
+ },
+ "My little sister giggled.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "My",
+    "start": 0,
+    "end": 2,
+    "ws": " ",
+    "lemma": "my",
+    "pos": "PRON",
+    "tag": "PRP$",
+    "dep": "poss",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "little",
+    "start": 3,
+    "end": 9,
+    "ws": " ",
+    "lemma": "little",
+    "pos": "ADJ",
+    "tag": "JJ",
+    "dep": "amod",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "sister",
+    "start": 10,
+    "end": 16,
+    "ws": " ",
+    "lemma": "sister",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "nsubj",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "giggled",
+    "start": 17,
+    "end": 24,
+    "ws": "",
+    "lemma": "giggle",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": ".",
+    "start": 24,
+    "end": 25,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 3,
+    "sent": 0
+   }
+  ]
+ },
+ "The very tired runner finally stopped.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "The",
+    "start": 0,
+    "end": 3,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "very",
+    "start": 4,
+    "end": 8,
+    "ws": " ",
+    "lemma": "very",
+    "pos": "ADV",
+    "tag": "RB",
+    "dep": "advmod",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "tired",
+    "start": 9,
+    "end": 14,
+    "ws": " ",
+    "lemma": "tired",
+    "pos": "ADJ",
+    "tag": "JJ",
+    "dep": "amod",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "runner",
+    "start": 15,
+    "end": 21,
+    "ws": " ",
+    "lemma": "runner",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "nsubj",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "finally",
+    "start": 22,
+    "end": 29,
+    "ws": " ",
+    "lemma": "finally",
+    "pos": "ADV",
+    "tag": "RB",
+    "dep": "advmod",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "stopped",
+    "start": 30,
+    "end": 37,
+    "ws": "",
+    "lemma": "stop",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": ".",
+    "start": 37,
+    "end": 38,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 5,
+    "sent": 0
+   }
+  ]
+ },
+ "Two hungry cats meowed loudly.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "Two",
+    "start": 0,
+    "end": 3,
+    "ws": " ",
+    "lemma": "two",
+    "pos": "NUM",
+    "tag": "CD",
+    "dep": "nummod",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "hungry",
+    "start": 4,
+    "end": 10,
+    "ws": " ",
+    "lemma": "hungry",
+    "pos": "ADJ",
+    "tag": "JJ",
+    "dep": "amod",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "cats",
+    "start": 11,
+    "end": 15,
+    "ws": " ",
+    "lemma": "cat",
+    "pos": "NOUN",
+    "tag": "NNS",
+    "dep": "nsubj",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "meowed",
+    "start": 16,
+    "end": 22,
+    "ws": " ",
+    "lemma": "meow",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "loudly",
+    "start": 23,
+    "end": 29,
+    "ws": "",
+    "lemma": "loudly",
+    "pos": "ADV",
+    "tag": "RB",
+    "dep": "advmod",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": ".",
+    "start": 29,
+    "end": 30,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 3,
+    "sent": 0
+   }
+  ]
+ },
+ "The dog chased the cat.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "The",
+    "start": 0,
+    "end": 3,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "dog",
+    "start": 4,
+    "end": 7,
+    "ws": " ",
+    "lemma": "dog",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "nsubj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "chased",
+    "start": 8,
+    "end": 14,
+    "ws": " ",
+    "lemma": "chase",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "the",
+    "start": 15,
+    "end": 18,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 4,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "cat",
+    "start": 19,
+    "end": 22,
+    "ws": "",
+    "lemma": "cat",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "dobj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": ".",
+    "start": 22,
+    "end": 23,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 2,
+    "sent": 0
+   }
+  ]
+ },
+ "She wrote a long letter.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "She",
+    "start": 0,
+    "end": 3,
+    "ws": " ",
+    "lemma": "she",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "wrote",
+    "start": 4,
+    "end": 9,
+    "ws": " ",
+    "lemma": "write",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "a",
+    "start": 10,
+    "end": 11,
+    "ws": " ",
+    "lemma": "a",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 4,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "long",
+    "start": 12,
+    "end": 16,
+    "ws": " ",
+    "lemma": "long",
+    "pos": "ADJ",
+    "tag": "JJ",
+    "dep": "amod",
+    "head": 4,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "letter",
+    "start": 17,
+    "end": 23,
+    "ws": "",
+    "lemma": "letter",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "dobj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": ".",
+    "start": 23,
+    "end": 24,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 1,
+    "sent": 0
+   }
+  ]
+ },
+ "We planted three trees.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "We",
+    "start": 0,
+    "end": 2,
+    "ws": " ",
+    "lemma": "we",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "planted",
+    "start": 3,
+    "end": 10,
+    "ws": " ",
+    "lemma": "plant",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "three",
+    "start": 11,
+    "end": 16,
+    "ws": " ",
+    "lemma": "three",
+    "pos": "NUM",
+    "tag": "CD",
+    "dep": "nummod",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "trees",
+    "start": 17,
+    "end": 22,
+    "ws": "",
+    "lemma": "tree",
+    "pos": "NOUN",
+    "tag": "NNS",
+    "dep": "dobj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": ".",
+    "start": 22,
+    "end": 23,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 1,
+    "sent": 0
+   }
+  ]
+ },
+ "The boy kicked the red ball.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "The",
+    "start": 0,
+    "end": 3,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "boy",
+    "start": 4,
+    "end": 7,
+    "ws": " ",
+    "lemma": "boy",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "nsubj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "kicked",
+    "start": 8,
+    "end": 14,
+    "ws": " ",
+    "lemma": "kick",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "the",
+    "start": 15,
+    "end": 18,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "red",
+    "start": 19,
+    "end": 22,
+    "ws": " ",
+    "lemma": "red",
+    "pos": "ADJ",
+    "tag": "JJ",
+    "dep": "amod",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "ball",
+    "start": 23,
+    "end": 27,
+    "ws": "",
+    "lemma": "ball",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "dobj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": ".",
+    "start": 27,
+    "end": 28,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 2,
+    "sent": 0
+   }
+  ]
+ },
+ "My father fixed the old fence.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "My",
+    "start": 0,
+    "end": 2,
+    "ws": " ",
+    "lemma": "my",
+    "pos": "PRON",
+    "tag": "PRP$",
+    "dep": "poss",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "father",
+    "start": 3,
+    "end": 9,
+    "ws": " ",
+    "lemma": "father",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "nsubj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "fixed",
+    "start": 10,
+    "end": 15,
+    "ws": " ",
+    "lemma": "fix",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "the",
+    "start": 16,
+    "end": 19,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "old",
+    "start": 20,
+    "end": 23,
+    "ws": " ",
+    "lemma": "old",
+    "pos": "ADJ",
+    "tag": "JJ",
+    "dep": "amod",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "fence",
+    "start": 24,
+    "end": 29,
+    "ws": "",
+    "lemma": "fence",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "dobj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": ".",
+    "start": 29,
+    "end": 30,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 2,
+    "sent": 0
+   }
+  ]
+ },
+ "They sold their house.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "They",
+    "start": 0,
+    "end": 4,
+    "ws": " ",
+    "lemma": "they",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "sold",
+    "start": 5,
+    "end": 9,
+    "ws": " ",
+    "lemma": "sell",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "their",
+    "start": 10,
+    "end": 15,
+    "ws": " ",
+    "lemma": "their",
+    "pos": "PRON",
+    "tag": "PRP$",
+    "dep": "poss",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "house",
+    "start": 16,
+    "end": 21,
+    "ws": "",
+    "lemma": "house",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "dobj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": ".",
+    "start": 21,
+    "end": 22,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 1,
+    "sent": 0
+   }
+  ]
+ },
+ "She looks happy.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "She",
+    "start": 0,
+    "end": 3,
+    "ws": " ",
+    "lemma": "she",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "looks",
+    "start": 4,
+    "end": 9,
+    "ws": " ",
+    "lemma": "look",
+    "pos": "VERB",
+    "tag": "VBZ",
+    "dep": "ROOT",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "happy",
+    "start": 10,
+    "end": 15,
+    "ws": "",
+    "lemma": "happy",
+    "pos": "ADJ",
+    "tag": "JJ",
+    "dep": "acomp",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": ".",
+    "start": 15,
+    "end": 16,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 1,
+    "sent": 0
+   }
+  ]
+ },
+ "The soup smells delicious.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "The",
+    "start": 0,
+    "end": 3,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "soup",
+    "start": 4,
+    "end": 8,
+    "ws": " ",
+    "lemma": "soup",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "nsubj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "smells",
+    "start": 9,
+    "end": 15,
+    "ws": " ",
+    "lemma": "smell",
+    "pos": "VERB",
+    "tag": "VBZ",
+    "dep": "ROOT",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "delicious",
+    "start": 16,
+    "end": 25,
+    "ws": "",
+    "lemma": "delicious",
+    "pos": "ADJ",
+    "tag": "JJ",
+    "dep": "acomp",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": ".",
+    "start": 25,
+    "end": 26,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 2,
+    "sent": 0
+   }
+  ]
+ },
+ "My uncle is a pilot.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "My",
+    "start": 0,
+    "end": 2,
+    "ws": " ",
+    "lemma": "my",
+    "pos": "PRON",
+    "tag": "PRP$",
+    "dep": "poss",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "uncle",
+    "start": 3,
+    "end": 8,
+    "ws": " ",
+    "lemma": "uncle",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "nsubj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "is",
+    "start": 9,
+    "end": 11,
+    "ws": " ",
+    "lemma": "be",
+    "pos": "AUX",
+    "tag": "VBZ",
+    "dep": "ROOT",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "a",
+    "start": 12,
+    "end": 13,
+    "ws": " ",
+    "lemma": "a",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 4,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "pilot",
+    "start": 14,
+    "end": 19,
+    "ws": "",
+    "lemma": "pilot",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "attr",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": ".",
+    "start": 19,
+    "end": 20,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 2,
+    "sent": 0
+   }
+  ]
+ },
+ "The sky became dark.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "The",
+    "start": 0,
+    "end": 3,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "sky",
+    "start": 4,
+    "end": 7,
+    "ws": " ",
+    "lemma": "sky",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "nsubj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "became",
+    "start": 8,
+    "end": 14,
+    "ws": " ",
+    "lemma": "become",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "dark",
+    "start": 15,
+    "end": 19,
+    "ws": "",
+    "lemma": "dark",
+    "pos": "ADJ",
+    "tag": "JJ",
+    "dep": "acomp",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": ".",
+    "start": 19,
+    "end": 20,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 2,
+    "sent": 0
+   }
+  ]
+ },
+ "Those flowers are roses.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "Those",
+    "start": 0,
+    "end": 5,
+    "ws": " ",
+    "lemma": "those",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "flowers",
+    "start": 6,
+    "end": 13,
+    "ws": " ",
+    "lemma": "flower",
+    "pos": "NOUN",
+    "tag": "NNS",
+    "dep": "nsubj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "are",
+    "start": 14,
+    "end": 17,
+    "ws": " ",
+    "lemma": "be",
+    "pos": "AUX",
+    "tag": "VBP",
+    "dep": "ROOT",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "roses",
+    "start": 18,
+    "end": 23,
+    "ws": "",
+    "lemma": "rose",
+    "pos": "NOUN",
+    "tag": "NNS",
+    "dep": "attr",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": ".",
+    "start": 23,
+    "end": 24,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 2,
+    "sent": 0
+   }
+  ]
+ },
+ "He seems tired.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "He",
+    "start": 0,
+    "end": 2,
+    "ws": " ",
+    "lemma": "he",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "seems",
+    "start": 3,
+    "end": 8,
+    "ws": " ",
+    "lemma": "seem",
+    "pos": "VERB",
+    "tag": "VBZ",
+    "dep": "ROOT",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "tired",
+    "start": 9,
+    "end": 14,
+    "ws": "",
+    "lemma": "tired",
+    "pos": "ADJ",
+    "tag": "JJ",
+    "dep": "oprd",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": ".",
+    "start": 14,
+    "end": 15,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 1,
+    "sent": 0
+   }
+  ]
+ },
+ "The cat slept on the sofa.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "The",
+    "start": 0,
+    "end": 3,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "cat",
+    "start": 4,
+    "end": 7,
+    "ws": " ",
+    "lemma": "cat",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "nsubj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "slept",
+    "start": 8,
+    "end": 13,
+    "ws": " ",
+    "lemma": "sleep",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "on",
+    "start": 14,
+    "end": 16,
+    "ws": " ",
+    "lemma": "on",
+    "pos": "ADP",
+    "tag": "IN",
+    "dep": "prep",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "the",
+    "start": 17,
+    "end": 20,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "sofa",
+    "start": 21,
+    "end": 25,
+    "ws": "",
+    "lemma": "sofa",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "pobj",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": ".",
+    "start": 25,
+    "end": 26,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 2,
+    "sent": 0
+   }
+  ]
+ },
+ "The girl with the red hat sang.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "The",
+    "start": 0,
+    "end": 3,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "girl",
+    "start": 4,
+    "end": 8,
+    "ws": " ",
+    "lemma": "girl",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "nsubj",
+    "head": 6,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "with",
+    "start": 9,
+    "end": 13,
+    "ws": " ",
+    "lemma": "with",
+    "pos": "ADP",
+    "tag": "IN",
+    "dep": "prep",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "the",
+    "start": 14,
+    "end": 17,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "red",
+    "start": 18,
+    "end": 21,
+    "ws": " ",
+    "lemma": "red",
+    "pos": "ADJ",
+    "tag": "JJ",
+    "dep": "amod",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "hat",
+    "start": 22,
+    "end": 25,
+    "ws": " ",
+    "lemma": "hat",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "pobj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": "sang",
+    "start": 26,
+    "end": 30,
+    "ws": "",
+    "lemma": "sing",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 6,
+    "sent": 0
+   },
+   {
+    "i": 7,
+    "text": ".",
+    "start": 30,
+    "end": 31,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 6,
+    "sent": 0
+   }
+  ]
+ },
+ "We walked to the park after lunch.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "We",
+    "start": 0,
+    "end": 2,
+    "ws": " ",
+    "lemma": "we",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "walked",
+    "start": 3,
+    "end": 9,
+    "ws": " ",
+    "lemma": "walk",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "to",
+    "start": 10,
+    "end": 12,
+    "ws": " ",
+    "lemma": "to",
+    "pos": "ADP",
+    "tag": "IN",
+    "dep": "prep",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "the",
+    "start": 13,
+    "end": 16,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 4,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "park",
+    "start": 17,
+    "end": 21,
+    "ws": " ",
+    "lemma": "park",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "pobj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "after",
+    "start": 22,
+    "end": 27,
+    "ws": " ",
+    "lemma": "after",
+    "pos": "ADP",
+    "tag": "IN",
+    "dep": "prep",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": "lunch",
+    "start": 28,
+    "end": 33,
+    "ws": "",
+    "lemma": "lunch",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "pobj",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 7,
+    "text": ".",
+    "start": 33,
+    "end": 34,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 1,
+    "sent": 0
+   }
+  ]
+ },
+ "The book on the table is mine.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "The",
+    "start": 0,
+    "end": 3,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "book",
+    "start": 4,
+    "end": 8,
+    "ws": " ",
+    "lemma": "book",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "nsubj",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "on",
+    "start": 9,
+    "end": 11,
+    "ws": " ",
+    "lemma": "on",
+    "pos": "ADP",
+    "tag": "IN",
+    "dep": "prep",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "the",
+    "start": 12,
+    "end": 15,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 4,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "table",
+    "start": 16,
+    "end": 21,
+    "ws": " ",
+    "lemma": "table",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "pobj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "is",
+    "start": 22,
+    "end": 24,
+    "ws": " ",
+    "lemma": "be",
+    "pos": "AUX",
+    "tag": "VBZ",
+    "dep": "ROOT",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": "mine",
+    "start": 25,
+    "end": 29,
+    "ws": "",
+    "lemma": "mine",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "attr",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 7,
+    "text": ".",
+    "start": 29,
+    "end": 30,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 5,
+    "sent": 0
+   }
+  ]
+ },
+ "He swam across the river.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "He",
+    "start": 0,
+    "end": 2,
+    "ws": " ",
+    "lemma": "he",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "swam",
+    "start": 3,
+    "end": 7,
+    "ws": " ",
+    "lemma": "swim",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "across",
+    "start": 8,
+    "end": 14,
+    "ws": " ",
+    "lemma": "across",
+    "pos": "ADP",
+    "tag": "IN",
+    "dep": "prep",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "the",
+    "start": 15,
+    "end": 18,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 4,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "river",
+    "start": 19,
+    "end": 24,
+    "ws": "",
+    "lemma": "river",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "pobj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": ".",
+    "start": 24,
+    "end": 25,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 1,
+    "sent": 0
+   }
+  ]
+ },
+ "A man in a blue coat waved at us.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "A",
+    "start": 0,
+    "end": 1,
+    "ws": " ",
+    "lemma": "a",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "man",
+    "start": 2,
+    "end": 5,
+    "ws": " ",
+    "lemma": "man",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "nsubj",
+    "head": 6,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "in",
+    "start": 6,
+    "end": 8,
+    "ws": " ",
+    "lemma": "in",
+    "pos": "ADP",
+    "tag": "IN",
+    "dep": "prep",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "a",
+    "start": 9,
+    "end": 10,
+    "ws": " ",
+    "lemma": "a",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "blue",
+    "start": 11,
+    "end": 15,
+    "ws": " ",
+    "lemma": "blue",
+    "pos": "ADJ",
+    "tag": "JJ",
+    "dep": "amod",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "coat",
+    "start": 16,
+    "end": 20,
+    "ws": " ",
+    "lemma": "coat",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "pobj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": "waved",
+    "start": 21,
+    "end": 26,
+    "ws": " ",
+    "lemma": "wave",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 6,
+    "sent": 0
+   },
+   {
+    "i": 7,
+    "text": "at",
+    "start": 27,
+    "end": 29,
+    "ws": " ",
+    "lemma": "at",
+    "pos": "ADP",
+    "tag": "IN",
+    "dep": "prep",
+    "head": 6,
+    "sent": 0
+   },
+   {
+    "i": 8,
+    "text": "us",
+    "start": 30,
+    "end": 32,
+    "ws": "",
+    "lemma": "we",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "pobj",
+    "head": 7,
+    "sent": 0
+   },
+   {
+    "i": 9,
+    "text": ".",
+    "start": 32,
+    "end": 33,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 6,
+    "sent": 0
+   }
+  ]
+ },
+ "She gave her brother a book.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "She",
+    "start": 0,
+    "end": 3,
+    "ws": " ",
+    "lemma": "she",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "gave",
+    "start": 4,
+    "end": 8,
+    "ws": " ",
+    "lemma": "give",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "her",
+    "start": 9,
+    "end": 12,
+    "ws": " ",
+    "lemma": "her",
+    "pos": "PRON",
+    "tag": "PRP$",
+    "dep": "poss",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "brother",
+    "start": 13,
+    "end": 20,
+    "ws": " ",
+    "lemma": "brother",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "dative",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "a",
+    "start": 21,
+    "end": 22,
+    "ws": " ",
+    "lemma": "a",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "book",
+    "start": 23,
+    "end": 27,
+    "ws": "",
+    "lemma": "book",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "dobj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": ".",
+    "start": 27,
+    "end": 28,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 1,
+    "sent": 0
+   }
+  ]
+ },
+ "The teacher handed each student a pencil.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "The",
+    "start": 0,
+    "end": 3,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "teacher",
+    "start": 4,
+    "end": 11,
+    "ws": " ",
+    "lemma": "teacher",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "nsubj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "handed",
+    "start": 12,
+    "end": 18,
+    "ws": " ",
+    "lemma": "hand",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "each",
+    "start": 19,
+    "end": 23,
+    "ws": " ",
+    "lemma": "each",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 4,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "student",
+    "start": 24,
+    "end": 31,
+    "ws": " ",
+    "lemma": "student",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "dative",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "a",
+    "start": 32,
+    "end": 33,
+    "ws": " ",
+    "lemma": "a",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 6,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": "pencil",
+    "start": 34,
+    "end": 40,
+    "ws": "",
+    "lemma": "pencil",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "dobj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 7,
+    "text": ".",
+    "start": 40,
+    "end": 41,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 2,
+    "sent": 0
+   }
+  ]
+ },
+ "They elected him president.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "They",
+    "start": 0,
+    "end": 4,
+    "ws": " ",
+    "lemma": "they",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "elected",
+    "start": 5,
+    "end": 12,
+    "ws": " ",
+    "lemma": "elect",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "him",
+    "start": 13,
+    "end": 16,
+    "ws": " ",
+    "lemma": "he",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "dobj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "president",
+    "start": 17,
+    "end": 26,
+    "ws": "",
+    "lemma": "president",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "oprd",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": ".",
+    "start": 26,
+    "end": 27,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 1,
+    "sent": 0
+   }
+  ]
+ },
+ "We painted the house red.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "We",
+    "start": 0,
+    "end": 2,
+    "ws": " ",
+    "lemma": "we",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "painted",
+    "start": 3,
+    "end": 10,
+    "ws": " ",
+    "lemma": "paint",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "the",
+    "start": 11,
+    "end": 14,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "house",
+    "start": 15,
+    "end": 20,
+    "ws": " ",
+    "lemma": "house",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "dobj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "red",
+    "start": 21,
+    "end": 24,
+    "ws": "",
+    "lemma": "red",
+    "pos": "ADJ",
+    "tag": "JJ",
+    "dep": "oprd",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": ".",
+    "start": 24,
+    "end": 25,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 1,
+    "sent": 0
+   }
+  ]
+ },
+ "John and Mary washed the car.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "John",
+    "start": 0,
+    "end": 4,
+    "ws": " ",
+    "lemma": "John",
+    "pos": "PROPN",
+    "tag": "NNP",
+    "dep": "nsubj",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "and",
+    "start": 5,
+    "end": 8,
+    "ws": " ",
+    "lemma": "and",
+    "pos": "CCONJ",
+    "tag": "CC",
+    "dep": "cc",
+    "head": 0,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "Mary",
+    "start": 9,
+    "end": 13,
+    "ws": " ",
+    "lemma": "Mary",
+    "pos": "PROPN",
+    "tag": "NNP",
+    "dep": "conj",
+    "head": 0,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "washed",
+    "start": 14,
+    "end": 20,
+    "ws": " ",
+    "lemma": "wash",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "the",
+    "start": 21,
+    "end": 24,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "car",
+    "start": 25,
+    "end": 28,
+    "ws": "",
+    "lemma": "car",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "dobj",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": ".",
+    "start": 28,
+    "end": 29,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 3,
+    "sent": 0
+   }
+  ]
+ },
+ "The children laughed and sang.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "The",
+    "start": 0,
+    "end": 3,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "children",
+    "start": 4,
+    "end": 12,
+    "ws": " ",
+    "lemma": "child",
+    "pos": "NOUN",
+    "tag": "NNS",
+    "dep": "nsubj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "laughed",
+    "start": 13,
+    "end": 20,
+    "ws": " ",
+    "lemma": "laugh",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "and",
+    "start": 21,
+    "end": 24,
+    "ws": " ",
+    "lemma": "and",
+    "pos": "CCONJ",
+    "tag": "CC",
+    "dep": "cc",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "sang",
+    "start": 25,
+    "end": 29,
+    "ws": "",
+    "lemma": "sing",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "conj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": ".",
+    "start": 29,
+    "end": 30,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 2,
+    "sent": 0
+   }
+  ]
+ },
+ "She bought apples and oranges.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "She",
+    "start": 0,
+    "end": 3,
+    "ws": " ",
+    "lemma": "she",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "bought",
+    "start": 4,
+    "end": 10,
+    "ws": " ",
+    "lemma": "buy",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "apples",
+    "start": 11,
+    "end": 17,
+    "ws": " ",
+    "lemma": "apple",
+    "pos": "NOUN",
+    "tag": "NNS",
+    "dep": "dobj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "and",
+    "start": 18,
+    "end": 21,
+    "ws": " ",
+    "lemma": "and",
+    "pos": "CCONJ",
+    "tag": "CC",
+    "dep": "cc",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "oranges",
+    "start": 22,
+    "end": 29,
+    "ws": "",
+    "lemma": "orange",
+    "pos": "NOUN",
+    "tag": "NNS",
+    "dep": "conj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": ".",
+    "start": 29,
+    "end": 30,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 1,
+    "sent": 0
+   }
+  ]
+ },
+ "We swam, ran, and biked.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "We",
+    "start": 0,
+    "end": 2,
+    "ws": " ",
+    "lemma": "we",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "swam",
+    "start": 3,
+    "end": 7,
+    "ws": "",
+    "lemma": "swim",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": ",",
+    "start": 7,
+    "end": 8,
+    "ws": " ",
+    "lemma": ",",
+    "pos": "PUNCT",
+    "tag": ",",
+    "dep": "punct",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "ran",
+    "start": 9,
+    "end": 12,
+    "ws": "",
+    "lemma": "run",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "conj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": ",",
+    "start": 12,
+    "end": 13,
+    "ws": " ",
+    "lemma": ",",
+    "pos": "PUNCT",
+    "tag": ",",
+    "dep": "punct",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "and",
+    "start": 14,
+    "end": 17,
+    "ws": " ",
+    "lemma": "and",
+    "pos": "CCONJ",
+    "tag": "CC",
+    "dep": "cc",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": "biked",
+    "start": 18,
+    "end": 23,
+    "ws": "",
+    "lemma": "bike",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "conj",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 7,
+    "text": ".",
+    "start": 23,
+    "end": 24,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 1,
+    "sent": 0
+   }
+  ]
+ },
+ "Tom and his sister cleaned the kitchen.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "Tom",
+    "start": 0,
+    "end": 3,
+    "ws": " ",
+    "lemma": "Tom",
+    "pos": "PROPN",
+    "tag": "NNP",
+    "dep": "nsubj",
+    "head": 4,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "and",
+    "start": 4,
+    "end": 7,
+    "ws": " ",
+    "lemma": "and",
+    "pos": "CCONJ",
+    "tag": "CC",
+    "dep": "cc",
+    "head": 0,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "his",
+    "start": 8,
+    "end": 11,
+    "ws": " ",
+    "lemma": "his",
+    "pos": "PRON",
+    "tag": "PRP$",
+    "dep": "poss",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "sister",
+    "start": 12,
+    "end": 18,
+    "ws": " ",
+    "lemma": "sister",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "conj",
+    "head": 0,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "cleaned",
+    "start": 19,
+    "end": 26,
+    "ws": " ",
+    "lemma": "clean",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 4,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "the",
+    "start": 27,
+    "end": 30,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 6,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": "kitchen",
+    "start": 31,
+    "end": 38,
+    "ws": "",
+    "lemma": "kitchen",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "dobj",
+    "head": 4,
+    "sent": 0
+   },
+   {
+    "i": 7,
+    "text": ".",
+    "start": 38,
+    "end": 39,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 4,
+    "sent": 0
+   }
+  ]
+ },
+ "The dog barked and growled at the mailman.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "The",
+    "start": 0,
+    "end": 3,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "dog",
+    "start": 4,
+    "end": 7,
+    "ws": " ",
+    "lemma": "dog",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "nsubj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "barked",
+    "start": 8,
+    "end": 14,
+    "ws": " ",
+    "lemma": "bark",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "and",
+    "start": 15,
+    "end": 18,
+    "ws": " ",
+    "lemma": "and",
+    "pos": "CCONJ",
+    "tag": "CC",
+    "dep": "cc",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "growled",
+    "start": 19,
+    "end": 26,
+    "ws": " ",
+    "lemma": "growl",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "conj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "at",
+    "start": 27,
+    "end": 29,
+    "ws": " ",
+    "lemma": "at",
+    "pos": "ADP",
+    "tag": "IN",
+    "dep": "prep",
+    "head": 4,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": "the",
+    "start": 30,
+    "end": 33,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 7,
+    "sent": 0
+   },
+   {
+    "i": 7,
+    "text": "mailman",
+    "start": 34,
+    "end": 41,
+    "ws": "",
+    "lemma": "mailman",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "pobj",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 8,
+    "text": ".",
+    "start": 41,
+    "end": 42,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 2,
+    "sent": 0
+   }
+  ]
+ },
+ "I like tea, but she likes coffee.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "I",
+    "start": 0,
+    "end": 1,
+    "ws": " ",
+    "lemma": "I",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "like",
+    "start": 2,
+    "end": 6,
+    "ws": " ",
+    "lemma": "like",
+    "pos": "VERB",
+    "tag": "VBP",
+    "dep": "ROOT",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "tea",
+    "start": 7,
+    "end": 10,
+    "ws": "",
+    "lemma": "tea",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "dobj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": ",",
+    "start": 10,
+    "end": 11,
+    "ws": " ",
+    "lemma": ",",
+    "pos": "PUNCT",
+    "tag": ",",
+    "dep": "punct",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "but",
+    "start": 12,
+    "end": 15,
+    "ws": " ",
+    "lemma": "but",
+    "pos": "CCONJ",
+    "tag": "CC",
+    "dep": "cc",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "she",
+    "start": 16,
+    "end": 19,
+    "ws": " ",
+    "lemma": "she",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 6,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": "likes",
+    "start": 20,
+    "end": 25,
+    "ws": " ",
+    "lemma": "like",
+    "pos": "VERB",
+    "tag": "VBZ",
+    "dep": "conj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 7,
+    "text": "coffee",
+    "start": 26,
+    "end": 32,
+    "ws": "",
+    "lemma": "coffee",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "dobj",
+    "head": 6,
+    "sent": 0
+   },
+   {
+    "i": 8,
+    "text": ".",
+    "start": 32,
+    "end": 33,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 6,
+    "sent": 0
+   }
+  ]
+ },
+ "The rain stopped, and the sun came out.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "The",
+    "start": 0,
+    "end": 3,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "rain",
+    "start": 4,
+    "end": 8,
+    "ws": " ",
+    "lemma": "rain",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "nsubj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "stopped",
+    "start": 9,
+    "end": 16,
+    "ws": "",
+    "lemma": "stop",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": ",",
+    "start": 16,
+    "end": 17,
+    "ws": " ",
+    "lemma": ",",
+    "pos": "PUNCT",
+    "tag": ",",
+    "dep": "punct",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "and",
+    "start": 18,
+    "end": 21,
+    "ws": " ",
+    "lemma": "and",
+    "pos": "CCONJ",
+    "tag": "CC",
+    "dep": "cc",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "the",
+    "start": 22,
+    "end": 25,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 6,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": "sun",
+    "start": 26,
+    "end": 29,
+    "ws": " ",
+    "lemma": "sun",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "nsubj",
+    "head": 7,
+    "sent": 0
+   },
+   {
+    "i": 7,
+    "text": "came",
+    "start": 30,
+    "end": 34,
+    "ws": " ",
+    "lemma": "come",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "conj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 8,
+    "text": "out",
+    "start": 35,
+    "end": 38,
+    "ws": "",
+    "lemma": "out",
+    "pos": "ADP",
+    "tag": "RP",
+    "dep": "prt",
+    "head": 7,
+    "sent": 0
+   },
+   {
+    "i": 9,
+    "text": ".",
+    "start": 38,
+    "end": 39,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 7,
+    "sent": 0
+   }
+  ]
+ },
+ "We waited, but the bus never came.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "We",
+    "start": 0,
+    "end": 2,
+    "ws": " ",
+    "lemma": "we",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "waited",
+    "start": 3,
+    "end": 9,
+    "ws": "",
+    "lemma": "wait",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": ",",
+    "start": 9,
+    "end": 10,
+    "ws": " ",
+    "lemma": ",",
+    "pos": "PUNCT",
+    "tag": ",",
+    "dep": "punct",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "but",
+    "start": 11,
+    "end": 14,
+    "ws": " ",
+    "lemma": "but",
+    "pos": "CCONJ",
+    "tag": "CC",
+    "dep": "cc",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "the",
+    "start": 15,
+    "end": 18,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "bus",
+    "start": 19,
+    "end": 22,
+    "ws": " ",
+    "lemma": "bus",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "nsubj",
+    "head": 7,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": "never",
+    "start": 23,
+    "end": 28,
+    "ws": " ",
+    "lemma": "never",
+    "pos": "ADV",
+    "tag": "RB",
+    "dep": "neg",
+    "head": 7,
+    "sent": 0
+   },
+   {
+    "i": 7,
+    "text": "came",
+    "start": 29,
+    "end": 33,
+    "ws": "",
+    "lemma": "come",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "conj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 8,
+    "text": ".",
+    "start": 33,
+    "end": 34,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 7,
+    "sent": 0
+   }
+  ]
+ },
+ "She sang, and he played the piano.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "She",
+    "start": 0,
+    "end": 3,
+    "ws": " ",
+    "lemma": "she",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "sang",
+    "start": 4,
+    "end": 8,
+    "ws": "",
+    "lemma": "sing",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": ",",
+    "start": 8,
+    "end": 9,
+    "ws": " ",
+    "lemma": ",",
+    "pos": "PUNCT",
+    "tag": ",",
+    "dep": "punct",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "and",
+    "start": 10,
+    "end": 13,
+    "ws": " ",
+    "lemma": "and",
+    "pos": "CCONJ",
+    "tag": "CC",
+    "dep": "cc",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "he",
+    "start": 14,
+    "end": 16,
+    "ws": " ",
+    "lemma": "he",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "played",
+    "start": 17,
+    "end": 23,
+    "ws": " ",
+    "lemma": "play",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "conj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": "the",
+    "start": 24,
+    "end": 27,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 7,
+    "sent": 0
+   },
+   {
+    "i": 7,
+    "text": "piano",
+    "start": 28,
+    "end": 33,
+    "ws": "",
+    "lemma": "piano",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "dobj",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 8,
+    "text": ".",
+    "start": 33,
+    "end": 34,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 5,
+    "sent": 0
+   }
+  ]
+ },
+ "I called, but nobody answered.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "I",
+    "start": 0,
+    "end": 1,
+    "ws": " ",
+    "lemma": "I",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "called",
+    "start": 2,
+    "end": 8,
+    "ws": "",
+    "lemma": "call",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": ",",
+    "start": 8,
+    "end": 9,
+    "ws": " ",
+    "lemma": ",",
+    "pos": "PUNCT",
+    "tag": ",",
+    "dep": "punct",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "but",
+    "start": 10,
+    "end": 13,
+    "ws": " ",
+    "lemma": "but",
+    "pos": "CCONJ",
+    "tag": "CC",
+    "dep": "cc",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "nobody",
+    "start": 14,
+    "end": 20,
+    "ws": " ",
+    "lemma": "nobody",
+    "pos": "PRON",
+    "tag": "NN",
+    "dep": "nsubj",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "answered",
+    "start": 21,
+    "end": 29,
+    "ws": "",
+    "lemma": "answer",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "conj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": ".",
+    "start": 29,
+    "end": 30,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 5,
+    "sent": 0
+   }
+  ]
+ },
+ "The wind howled, and the windows rattled.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "The",
+    "start": 0,
+    "end": 3,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "wind",
+    "start": 4,
+    "end": 8,
+    "ws": " ",
+    "lemma": "wind",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "nsubj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "howled",
+    "start": 9,
+    "end": 15,
+    "ws": "",
+    "lemma": "howl",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": ",",
+    "start": 15,
+    "end": 16,
+    "ws": " ",
+    "lemma": ",",
+    "pos": "PUNCT",
+    "tag": ",",
+    "dep": "punct",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "and",
+    "start": 17,
+    "end": 20,
+    "ws": " ",
+    "lemma": "and",
+    "pos": "CCONJ",
+    "tag": "CC",
+    "dep": "cc",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "the",
+    "start": 21,
+    "end": 24,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 6,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": "windows",
+    "start": 25,
+    "end": 32,
+    "ws": " ",
+    "lemma": "window",
+    "pos": "NOUN",
+    "tag": "NNS",
+    "dep": "nsubj",
+    "head": 7,
+    "sent": 0
+   },
+   {
+    "i": 7,
+    "text": "rattled",
+    "start": 33,
+    "end": 40,
+    "ws": "",
+    "lemma": "rattle",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "conj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 8,
+    "text": ".",
+    "start": 40,
+    "end": 41,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 7,
+    "sent": 0
+   }
+  ]
+ },
+ "Did you see the dog?": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "Did",
+    "start": 0,
+    "end": 3,
+    "ws": " ",
+    "lemma": "do",
+    "pos": "AUX",
+    "tag": "VBD",
+    "dep": "aux",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "you",
+    "start": 4,
+    "end": 7,
+    "ws": " ",
+    "lemma": "you",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "see",
+    "start": 8,
+    "end": 11,
+    "ws": " ",
+    "lemma": "see",
+    "pos": "VERB",
+    "tag": "VB",
+    "dep": "ROOT",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "the",
+    "start": 12,
+    "end": 15,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 4,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "dog",
+    "start": 16,
+    "end": 19,
+    "ws": "",
+    "lemma": "dog",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "dobj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "?",
+    "start": 19,
+    "end": 20,
+    "ws": "",
+    "lemma": "?",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 2,
+    "sent": 0
+   }
+  ]
+ },
+ "What did you see?": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "What",
+    "start": 0,
+    "end": 4,
+    "ws": " ",
+    "lemma": "what",
+    "pos": "PRON",
+    "tag": "WP",
+    "dep": "dobj",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "did",
+    "start": 5,
+    "end": 8,
+    "ws": " ",
+    "lemma": "do",
+    "pos": "AUX",
+    "tag": "VBD",
+    "dep": "aux",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "you",
+    "start": 9,
+    "end": 12,
+    "ws": " ",
+    "lemma": "you",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "see",
+    "start": 13,
+    "end": 16,
+    "ws": "",
+    "lemma": "see",
+    "pos": "VERB",
+    "tag": "VB",
+    "dep": "ROOT",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "?",
+    "start": 16,
+    "end": 17,
+    "ws": "",
+    "lemma": "?",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 3,
+    "sent": 0
+   }
+  ]
+ },
+ "Close the door.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "Close",
+    "start": 0,
+    "end": 5,
+    "ws": " ",
+    "lemma": "close",
+    "pos": "VERB",
+    "tag": "VB",
+    "dep": "ROOT",
+    "head": 0,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "the",
+    "start": 6,
+    "end": 9,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "door",
+    "start": 10,
+    "end": 14,
+    "ws": "",
+    "lemma": "door",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "dobj",
+    "head": 0,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": ".",
+    "start": 14,
+    "end": 15,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 0,
+    "sent": 0
+   }
+  ]
+ },
+ "Don't touch the stove!": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "Do",
+    "start": 0,
+    "end": 2,
+    "ws": "",
+    "lemma": "do",
+    "pos": "AUX",
+    "tag": "VB",
+    "dep": "aux",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "n't",
+    "start": 2,
+    "end": 5,
+    "ws": " ",
+    "lemma": "not",
+    "pos": "PART",
+    "tag": "RB",
+    "dep": "neg",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "touch",
+    "start": 6,
+    "end": 11,
+    "ws": " ",
+    "lemma": "touch",
+    "pos": "VERB",
+    "tag": "VB",
+    "dep": "ROOT",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "the",
+    "start": 12,
+    "end": 15,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 4,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "stove",
+    "start": 16,
+    "end": 21,
+    "ws": "",
+    "lemma": "stove",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "dobj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "!",
+    "start": 21,
+    "end": 22,
+    "ws": "",
+    "lemma": "!",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 2,
+    "sent": 0
+   }
+  ]
+ },
+ "Wow, that was amazing!": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "Wow",
+    "start": 0,
+    "end": 3,
+    "ws": "",
+    "lemma": "wow",
+    "pos": "INTJ",
+    "tag": "UH",
+    "dep": "intj",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": ",",
+    "start": 3,
+    "end": 4,
+    "ws": " ",
+    "lemma": ",",
+    "pos": "PUNCT",
+    "tag": ",",
+    "dep": "punct",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "that",
+    "start": 5,
+    "end": 9,
+    "ws": " ",
+    "lemma": "that",
+    "pos": "PRON",
+    "tag": "DT",
+    "dep": "nsubj",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "was",
+    "start": 10,
+    "end": 13,
+    "ws": " ",
+    "lemma": "be",
+    "pos": "AUX",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "amazing",
+    "start": 14,
+    "end": 21,
+    "ws": "",
+    "lemma": "amazing",
+    "pos": "ADJ",
+    "tag": "JJ",
+    "dep": "acomp",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "!",
+    "start": 21,
+    "end": 22,
+    "ws": "",
+    "lemma": "!",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 3,
+    "sent": 0
+   }
+  ]
+ },
+ "There is a cat on the mat.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "There",
+    "start": 0,
+    "end": 5,
+    "ws": " ",
+    "lemma": "there",
+    "pos": "PRON",
+    "tag": "EX",
+    "dep": "expl",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "is",
+    "start": 6,
+    "end": 8,
+    "ws": " ",
+    "lemma": "be",
+    "pos": "VERB",
+    "tag": "VBZ",
+    "dep": "ROOT",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "a",
+    "start": 9,
+    "end": 10,
+    "ws": " ",
+    "lemma": "a",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "cat",
+    "start": 11,
+    "end": 14,
+    "ws": " ",
+    "lemma": "cat",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "attr",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "on",
+    "start": 15,
+    "end": 17,
+    "ws": " ",
+    "lemma": "on",
+    "pos": "ADP",
+    "tag": "IN",
+    "dep": "prep",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "the",
+    "start": 18,
+    "end": 21,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 6,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": "mat",
+    "start": 22,
+    "end": 25,
+    "ws": "",
+    "lemma": "mat",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "pobj",
+    "head": 4,
+    "sent": 0
+   },
+   {
+    "i": 7,
+    "text": ".",
+    "start": 25,
+    "end": 26,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 1,
+    "sent": 0
+   }
+  ]
+ },
+ "I want to swim in the lake.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "I",
+    "start": 0,
+    "end": 1,
+    "ws": " ",
+    "lemma": "I",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "want",
+    "start": 2,
+    "end": 6,
+    "ws": " ",
+    "lemma": "want",
+    "pos": "VERB",
+    "tag": "VBP",
+    "dep": "ROOT",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "to",
+    "start": 7,
+    "end": 9,
+    "ws": " ",
+    "lemma": "to",
+    "pos": "PART",
+    "tag": "TO",
+    "dep": "aux",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "swim",
+    "start": 10,
+    "end": 14,
+    "ws": " ",
+    "lemma": "swim",
+    "pos": "VERB",
+    "tag": "VB",
+    "dep": "xcomp",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "in",
+    "start": 15,
+    "end": 17,
+    "ws": " ",
+    "lemma": "in",
+    "pos": "ADP",
+    "tag": "IN",
+    "dep": "prep",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "the",
+    "start": 18,
+    "end": 21,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 6,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": "lake",
+    "start": 22,
+    "end": 26,
+    "ws": "",
+    "lemma": "lake",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "pobj",
+    "head": 4,
+    "sent": 0
+   },
+   {
+    "i": 7,
+    "text": ".",
+    "start": 26,
+    "end": 27,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 1,
+    "sent": 0
+   }
+  ]
+ },
+ "Swimming in the lake is fun.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "Swimming",
+    "start": 0,
+    "end": 8,
+    "ws": " ",
+    "lemma": "swim",
+    "pos": "VERB",
+    "tag": "VBG",
+    "dep": "csubj",
+    "head": 4,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "in",
+    "start": 9,
+    "end": 11,
+    "ws": " ",
+    "lemma": "in",
+    "pos": "ADP",
+    "tag": "IN",
+    "dep": "prep",
+    "head": 0,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "the",
+    "start": 12,
+    "end": 15,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "lake",
+    "start": 16,
+    "end": 20,
+    "ws": " ",
+    "lemma": "lake",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "pobj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "is",
+    "start": 21,
+    "end": 23,
+    "ws": " ",
+    "lemma": "be",
+    "pos": "AUX",
+    "tag": "VBZ",
+    "dep": "ROOT",
+    "head": 4,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "fun",
+    "start": 24,
+    "end": 27,
+    "ws": "",
+    "lemma": "fun",
+    "pos": "ADJ",
+    "tag": "JJ",
+    "dep": "acomp",
+    "head": 4,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": ".",
+    "start": 27,
+    "end": 28,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 4,
+    "sent": 0
+   }
+  ]
+ },
+ "The dog barking at the cat is mine.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "The",
+    "start": 0,
+    "end": 3,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "dog",
+    "start": 4,
+    "end": 7,
+    "ws": " ",
+    "lemma": "dog",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "nsubj",
+    "head": 6,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "barking",
+    "start": 8,
+    "end": 15,
+    "ws": " ",
+    "lemma": "bark",
+    "pos": "VERB",
+    "tag": "VBG",
+    "dep": "acl",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "at",
+    "start": 16,
+    "end": 18,
+    "ws": " ",
+    "lemma": "at",
+    "pos": "ADP",
+    "tag": "IN",
+    "dep": "prep",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "the",
+    "start": 19,
+    "end": 22,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "cat",
+    "start": 23,
+    "end": 26,
+    "ws": " ",
+    "lemma": "cat",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "pobj",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": "is",
+    "start": 27,
+    "end": 29,
+    "ws": " ",
+    "lemma": "be",
+    "pos": "AUX",
+    "tag": "VBZ",
+    "dep": "ROOT",
+    "head": 6,
+    "sent": 0
+   },
+   {
+    "i": 7,
+    "text": "mine",
+    "start": 30,
+    "end": 34,
+    "ws": "",
+    "lemma": "mine",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "attr",
+    "head": 6,
+    "sent": 0
+   },
+   {
+    "i": 8,
+    "text": ".",
+    "start": 34,
+    "end": 35,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 6,
+    "sent": 0
+   }
+  ]
+ },
+ "She went to the store to buy milk.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "She",
+    "start": 0,
+    "end": 3,
+    "ws": " ",
+    "lemma": "she",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "went",
+    "start": 4,
+    "end": 8,
+    "ws": " ",
+    "lemma": "go",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "to",
+    "start": 9,
+    "end": 11,
+    "ws": " ",
+    "lemma": "to",
+    "pos": "ADP",
+    "tag": "IN",
+    "dep": "prep",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "the",
+    "start": 12,
+    "end": 15,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 4,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "store",
+    "start": 16,
+    "end": 21,
+    "ws": " ",
+    "lemma": "store",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "pobj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "to",
+    "start": 22,
+    "end": 24,
+    "ws": " ",
+    "lemma": "to",
+    "pos": "PART",
+    "tag": "TO",
+    "dep": "aux",
+    "head": 6,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": "buy",
+    "start": 25,
+    "end": 28,
+    "ws": " ",
+    "lemma": "buy",
+    "pos": "VERB",
+    "tag": "VB",
+    "dep": "advcl",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 7,
+    "text": "milk",
+    "start": 29,
+    "end": 33,
+    "ws": "",
+    "lemma": "milk",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "dobj",
+    "head": 6,
+    "sent": 0
+   },
+   {
+    "i": 8,
+    "text": ".",
+    "start": 33,
+    "end": 34,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 1,
+    "sent": 0
+   }
+  ]
+ },
+ "He likes to paint landscapes.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "He",
+    "start": 0,
+    "end": 2,
+    "ws": " ",
+    "lemma": "he",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "likes",
+    "start": 3,
+    "end": 8,
+    "ws": " ",
+    "lemma": "like",
+    "pos": "VERB",
+    "tag": "VBZ",
+    "dep": "ROOT",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "to",
+    "start": 9,
+    "end": 11,
+    "ws": " ",
+    "lemma": "to",
+    "pos": "PART",
+    "tag": "TO",
+    "dep": "aux",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "paint",
+    "start": 12,
+    "end": 17,
+    "ws": " ",
+    "lemma": "paint",
+    "pos": "VERB",
+    "tag": "VB",
+    "dep": "xcomp",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "landscapes",
+    "start": 18,
+    "end": 28,
+    "ws": "",
+    "lemma": "landscape",
+    "pos": "NOUN",
+    "tag": "NNS",
+    "dep": "dobj",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": ".",
+    "start": 28,
+    "end": 29,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 1,
+    "sent": 0
+   }
+  ]
+ },
+ "When the bell rang, the students left quickly.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "When",
+    "start": 0,
+    "end": 4,
+    "ws": " ",
+    "lemma": "when",
+    "pos": "SCONJ",
+    "tag": "WRB",
+    "dep": "advmod",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "the",
+    "start": 5,
+    "end": 8,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "bell",
+    "start": 9,
+    "end": 13,
+    "ws": " ",
+    "lemma": "bell",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "nsubj",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "rang",
+    "start": 14,
+    "end": 18,
+    "ws": "",
+    "lemma": "ring",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "advcl",
+    "head": 7,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": ",",
+    "start": 18,
+    "end": 19,
+    "ws": " ",
+    "lemma": ",",
+    "pos": "PUNCT",
+    "tag": ",",
+    "dep": "punct",
+    "head": 7,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "the",
+    "start": 20,
+    "end": 23,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 6,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": "students",
+    "start": 24,
+    "end": 32,
+    "ws": " ",
+    "lemma": "student",
+    "pos": "NOUN",
+    "tag": "NNS",
+    "dep": "nsubj",
+    "head": 7,
+    "sent": 0
+   },
+   {
+    "i": 7,
+    "text": "left",
+    "start": 33,
+    "end": 37,
+    "ws": " ",
+    "lemma": "leave",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 7,
+    "sent": 0
+   },
+   {
+    "i": 8,
+    "text": "quickly",
+    "start": 38,
+    "end": 45,
+    "ws": "",
+    "lemma": "quickly",
+    "pos": "ADV",
+    "tag": "RB",
+    "dep": "advmod",
+    "head": 7,
+    "sent": 0
+   },
+   {
+    "i": 9,
+    "text": ".",
+    "start": 45,
+    "end": 46,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 7,
+    "sent": 0
+   }
+  ]
+ },
+ "If it rains, we will stay inside.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "If",
+    "start": 0,
+    "end": 2,
+    "ws": " ",
+    "lemma": "if",
+    "pos": "SCONJ",
+    "tag": "IN",
+    "dep": "mark",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "it",
+    "start": 3,
+    "end": 5,
+    "ws": " ",
+    "lemma": "it",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "rains",
+    "start": 6,
+    "end": 11,
+    "ws": "",
+    "lemma": "rain",
+    "pos": "VERB",
+    "tag": "VBZ",
+    "dep": "advcl",
+    "head": 6,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": ",",
+    "start": 11,
+    "end": 12,
+    "ws": " ",
+    "lemma": ",",
+    "pos": "PUNCT",
+    "tag": ",",
+    "dep": "punct",
+    "head": 6,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "we",
+    "start": 13,
+    "end": 15,
+    "ws": " ",
+    "lemma": "we",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 6,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "will",
+    "start": 16,
+    "end": 20,
+    "ws": " ",
+    "lemma": "will",
+    "pos": "AUX",
+    "tag": "MD",
+    "dep": "aux",
+    "head": 6,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": "stay",
+    "start": 21,
+    "end": 25,
+    "ws": " ",
+    "lemma": "stay",
+    "pos": "VERB",
+    "tag": "VB",
+    "dep": "ROOT",
+    "head": 6,
+    "sent": 0
+   },
+   {
+    "i": 7,
+    "text": "inside",
+    "start": 26,
+    "end": 32,
+    "ws": "",
+    "lemma": "inside",
+    "pos": "ADV",
+    "tag": "RB",
+    "dep": "advmod",
+    "head": 6,
+    "sent": 0
+   },
+   {
+    "i": 8,
+    "text": ".",
+    "start": 32,
+    "end": 33,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 6,
+    "sent": 0
+   }
+  ]
+ },
+ "She smiled because she won.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "She",
+    "start": 0,
+    "end": 3,
+    "ws": " ",
+    "lemma": "she",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "smiled",
+    "start": 4,
+    "end": 10,
+    "ws": " ",
+    "lemma": "smile",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "because",
+    "start": 11,
+    "end": 18,
+    "ws": " ",
+    "lemma": "because",
+    "pos": "SCONJ",
+    "tag": "IN",
+    "dep": "mark",
+    "head": 4,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "she",
+    "start": 19,
+    "end": 22,
+    "ws": " ",
+    "lemma": "she",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 4,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "won",
+    "start": 23,
+    "end": 26,
+    "ws": "",
+    "lemma": "win",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "advcl",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": ".",
+    "start": 26,
+    "end": 27,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 1,
+    "sent": 0
+   }
+  ]
+ },
+ "We left before the movie ended.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "We",
+    "start": 0,
+    "end": 2,
+    "ws": " ",
+    "lemma": "we",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "left",
+    "start": 3,
+    "end": 7,
+    "ws": " ",
+    "lemma": "leave",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "before",
+    "start": 8,
+    "end": 14,
+    "ws": " ",
+    "lemma": "before",
+    "pos": "SCONJ",
+    "tag": "IN",
+    "dep": "mark",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "the",
+    "start": 15,
+    "end": 18,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 4,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "movie",
+    "start": 19,
+    "end": 24,
+    "ws": " ",
+    "lemma": "movie",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "nsubj",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "ended",
+    "start": 25,
+    "end": 30,
+    "ws": "",
+    "lemma": "end",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "advcl",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": ".",
+    "start": 30,
+    "end": 31,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 1,
+    "sent": 0
+   }
+  ]
+ },
+ "Although he was tired, he finished the race.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "Although",
+    "start": 0,
+    "end": 8,
+    "ws": " ",
+    "lemma": "although",
+    "pos": "SCONJ",
+    "tag": "IN",
+    "dep": "mark",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "he",
+    "start": 9,
+    "end": 11,
+    "ws": " ",
+    "lemma": "he",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "was",
+    "start": 12,
+    "end": 15,
+    "ws": " ",
+    "lemma": "be",
+    "pos": "AUX",
+    "tag": "VBD",
+    "dep": "advcl",
+    "head": 6,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "tired",
+    "start": 16,
+    "end": 21,
+    "ws": "",
+    "lemma": "tired",
+    "pos": "ADJ",
+    "tag": "JJ",
+    "dep": "acomp",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": ",",
+    "start": 21,
+    "end": 22,
+    "ws": " ",
+    "lemma": ",",
+    "pos": "PUNCT",
+    "tag": ",",
+    "dep": "punct",
+    "head": 6,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "he",
+    "start": 23,
+    "end": 25,
+    "ws": " ",
+    "lemma": "he",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 6,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": "finished",
+    "start": 26,
+    "end": 34,
+    "ws": " ",
+    "lemma": "finish",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 6,
+    "sent": 0
+   },
+   {
+    "i": 7,
+    "text": "the",
+    "start": 35,
+    "end": 38,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 8,
+    "sent": 0
+   },
+   {
+    "i": 8,
+    "text": "race",
+    "start": 39,
+    "end": 43,
+    "ws": "",
+    "lemma": "race",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "dobj",
+    "head": 6,
+    "sent": 0
+   },
+   {
+    "i": 9,
+    "text": ".",
+    "start": 43,
+    "end": 44,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 6,
+    "sent": 0
+   }
+  ]
+ },
+ "I will call you when I arrive.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "I",
+    "start": 0,
+    "end": 1,
+    "ws": " ",
+    "lemma": "I",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "will",
+    "start": 2,
+    "end": 6,
+    "ws": " ",
+    "lemma": "will",
+    "pos": "AUX",
+    "tag": "MD",
+    "dep": "aux",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "call",
+    "start": 7,
+    "end": 11,
+    "ws": " ",
+    "lemma": "call",
+    "pos": "VERB",
+    "tag": "VB",
+    "dep": "ROOT",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "you",
+    "start": 12,
+    "end": 15,
+    "ws": " ",
+    "lemma": "you",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "dobj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "when",
+    "start": 16,
+    "end": 20,
+    "ws": " ",
+    "lemma": "when",
+    "pos": "SCONJ",
+    "tag": "WRB",
+    "dep": "advmod",
+    "head": 6,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "I",
+    "start": 21,
+    "end": 22,
+    "ws": " ",
+    "lemma": "I",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 6,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": "arrive",
+    "start": 23,
+    "end": 29,
+    "ws": "",
+    "lemma": "arrive",
+    "pos": "VERB",
+    "tag": "VBP",
+    "dep": "advcl",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 7,
+    "text": ".",
+    "start": 29,
+    "end": 30,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 2,
+    "sent": 0
+   }
+  ]
+ },
+ "The book that I read was boring.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "The",
+    "start": 0,
+    "end": 3,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "book",
+    "start": 4,
+    "end": 8,
+    "ws": " ",
+    "lemma": "book",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "nsubj",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "that",
+    "start": 9,
+    "end": 13,
+    "ws": " ",
+    "lemma": "that",
+    "pos": "PRON",
+    "tag": "WDT",
+    "dep": "dobj",
+    "head": 4,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "I",
+    "start": 14,
+    "end": 15,
+    "ws": " ",
+    "lemma": "I",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 4,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "read",
+    "start": 16,
+    "end": 20,
+    "ws": " ",
+    "lemma": "read",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "relcl",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "was",
+    "start": 21,
+    "end": 24,
+    "ws": " ",
+    "lemma": "be",
+    "pos": "AUX",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": "boring",
+    "start": 25,
+    "end": 31,
+    "ws": "",
+    "lemma": "boring",
+    "pos": "ADJ",
+    "tag": "JJ",
+    "dep": "acomp",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 7,
+    "text": ".",
+    "start": 31,
+    "end": 32,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 5,
+    "sent": 0
+   }
+  ]
+ },
+ "The cake that she baked was delicious.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "The",
+    "start": 0,
+    "end": 3,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "cake",
+    "start": 4,
+    "end": 8,
+    "ws": " ",
+    "lemma": "cake",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "nsubj",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "that",
+    "start": 9,
+    "end": 13,
+    "ws": " ",
+    "lemma": "that",
+    "pos": "PRON",
+    "tag": "WDT",
+    "dep": "dobj",
+    "head": 4,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "she",
+    "start": 14,
+    "end": 17,
+    "ws": " ",
+    "lemma": "she",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 4,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "baked",
+    "start": 18,
+    "end": 23,
+    "ws": " ",
+    "lemma": "bake",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "relcl",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "was",
+    "start": 24,
+    "end": 27,
+    "ws": " ",
+    "lemma": "be",
+    "pos": "AUX",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": "delicious",
+    "start": 28,
+    "end": 37,
+    "ws": "",
+    "lemma": "delicious",
+    "pos": "ADJ",
+    "tag": "JJ",
+    "dep": "acomp",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 7,
+    "text": ".",
+    "start": 37,
+    "end": 38,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 5,
+    "sent": 0
+   }
+  ]
+ },
+ "People who exercise sleep better.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "People",
+    "start": 0,
+    "end": 6,
+    "ws": " ",
+    "lemma": "People",
+    "pos": "NOUN",
+    "tag": "NNS",
+    "dep": "nsubj",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "who",
+    "start": 7,
+    "end": 10,
+    "ws": " ",
+    "lemma": "who",
+    "pos": "PRON",
+    "tag": "WP",
+    "dep": "nsubj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "exercise",
+    "start": 11,
+    "end": 19,
+    "ws": " ",
+    "lemma": "exercise",
+    "pos": "VERB",
+    "tag": "VB",
+    "dep": "relcl",
+    "head": 0,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "sleep",
+    "start": 20,
+    "end": 25,
+    "ws": " ",
+    "lemma": "sleep",
+    "pos": "VERB",
+    "tag": "VBP",
+    "dep": "ROOT",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "better",
+    "start": 26,
+    "end": 32,
+    "ws": "",
+    "lemma": "well",
+    "pos": "ADV",
+    "tag": "RBR",
+    "dep": "advmod",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": ".",
+    "start": 32,
+    "end": 33,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 3,
+    "sent": 0
+   }
+  ]
+ },
+ "I know that he is right.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "I",
+    "start": 0,
+    "end": 1,
+    "ws": " ",
+    "lemma": "I",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "know",
+    "start": 2,
+    "end": 6,
+    "ws": " ",
+    "lemma": "know",
+    "pos": "VERB",
+    "tag": "VBP",
+    "dep": "ROOT",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "that",
+    "start": 7,
+    "end": 11,
+    "ws": " ",
+    "lemma": "that",
+    "pos": "SCONJ",
+    "tag": "IN",
+    "dep": "mark",
+    "head": 4,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "he",
+    "start": 12,
+    "end": 14,
+    "ws": " ",
+    "lemma": "he",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 4,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "is",
+    "start": 15,
+    "end": 17,
+    "ws": " ",
+    "lemma": "be",
+    "pos": "AUX",
+    "tag": "VBZ",
+    "dep": "ccomp",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "right",
+    "start": 18,
+    "end": 23,
+    "ws": "",
+    "lemma": "right",
+    "pos": "ADJ",
+    "tag": "JJ",
+    "dep": "acomp",
+    "head": 4,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": ".",
+    "start": 23,
+    "end": 24,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 1,
+    "sent": 0
+   }
+  ]
+ },
+ "She wondered whether it would rain.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "She",
+    "start": 0,
+    "end": 3,
+    "ws": " ",
+    "lemma": "she",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "wondered",
+    "start": 4,
+    "end": 12,
+    "ws": " ",
+    "lemma": "wonder",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "whether",
+    "start": 13,
+    "end": 20,
+    "ws": " ",
+    "lemma": "whether",
+    "pos": "SCONJ",
+    "tag": "IN",
+    "dep": "mark",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "it",
+    "start": 21,
+    "end": 23,
+    "ws": " ",
+    "lemma": "it",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "would",
+    "start": 24,
+    "end": 29,
+    "ws": " ",
+    "lemma": "would",
+    "pos": "AUX",
+    "tag": "MD",
+    "dep": "aux",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "rain",
+    "start": 30,
+    "end": 34,
+    "ws": "",
+    "lemma": "rain",
+    "pos": "VERB",
+    "tag": "VB",
+    "dep": "ccomp",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": ".",
+    "start": 34,
+    "end": 35,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 1,
+    "sent": 0
+   }
+  ]
+ },
+ "I believe that you can win.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "I",
+    "start": 0,
+    "end": 1,
+    "ws": " ",
+    "lemma": "I",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "believe",
+    "start": 2,
+    "end": 9,
+    "ws": " ",
+    "lemma": "believe",
+    "pos": "VERB",
+    "tag": "VBP",
+    "dep": "ROOT",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "that",
+    "start": 10,
+    "end": 14,
+    "ws": " ",
+    "lemma": "that",
+    "pos": "SCONJ",
+    "tag": "IN",
+    "dep": "mark",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "you",
+    "start": 15,
+    "end": 18,
+    "ws": " ",
+    "lemma": "you",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "can",
+    "start": 19,
+    "end": 22,
+    "ws": " ",
+    "lemma": "can",
+    "pos": "AUX",
+    "tag": "MD",
+    "dep": "aux",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "win",
+    "start": 23,
+    "end": 26,
+    "ws": "",
+    "lemma": "win",
+    "pos": "VERB",
+    "tag": "VB",
+    "dep": "ccomp",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": ".",
+    "start": 26,
+    "end": 27,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 1,
+    "sent": 0
+   }
+  ]
+ },
+ "I wonder who called.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "I",
+    "start": 0,
+    "end": 1,
+    "ws": " ",
+    "lemma": "I",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "wonder",
+    "start": 2,
+    "end": 8,
+    "ws": " ",
+    "lemma": "wonder",
+    "pos": "VERB",
+    "tag": "VBP",
+    "dep": "ROOT",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "who",
+    "start": 9,
+    "end": 12,
+    "ws": " ",
+    "lemma": "who",
+    "pos": "PRON",
+    "tag": "WP",
+    "dep": "nsubj",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "called",
+    "start": 13,
+    "end": 19,
+    "ws": "",
+    "lemma": "call",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ccomp",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": ".",
+    "start": 19,
+    "end": 20,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 1,
+    "sent": 0
+   }
+  ]
+ },
+ "Grandma sent me a letter.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "Grandma",
+    "start": 0,
+    "end": 7,
+    "ws": " ",
+    "lemma": "Grandma",
+    "pos": "PROPN",
+    "tag": "NNP",
+    "dep": "nsubj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "sent",
+    "start": 8,
+    "end": 12,
+    "ws": " ",
+    "lemma": "send",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "me",
+    "start": 13,
+    "end": 15,
+    "ws": " ",
+    "lemma": "I",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "dative",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "a",
+    "start": 16,
+    "end": 17,
+    "ws": " ",
+    "lemma": "a",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 4,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "letter",
+    "start": 18,
+    "end": 24,
+    "ws": "",
+    "lemma": "letter",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "dobj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": ".",
+    "start": 24,
+    "end": 25,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 1,
+    "sent": 0
+   }
+  ]
+ },
+ "We named him Buddy.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "We",
+    "start": 0,
+    "end": 2,
+    "ws": " ",
+    "lemma": "we",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "named",
+    "start": 3,
+    "end": 8,
+    "ws": " ",
+    "lemma": "name",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "him",
+    "start": 9,
+    "end": 12,
+    "ws": " ",
+    "lemma": "he",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "dobj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "Buddy",
+    "start": 13,
+    "end": 18,
+    "ws": "",
+    "lemma": "Buddy",
+    "pos": "PROPN",
+    "tag": "NNP",
+    "dep": "oprd",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": ".",
+    "start": 18,
+    "end": 19,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 1,
+    "sent": 0
+   }
+  ]
+ },
+ "She loves painting flowers.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "She",
+    "start": 0,
+    "end": 3,
+    "ws": " ",
+    "lemma": "she",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "loves",
+    "start": 4,
+    "end": 9,
+    "ws": " ",
+    "lemma": "love",
+    "pos": "VERB",
+    "tag": "VBZ",
+    "dep": "ROOT",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "painting",
+    "start": 10,
+    "end": 18,
+    "ws": " ",
+    "lemma": "paint",
+    "pos": "VERB",
+    "tag": "VBG",
+    "dep": "xcomp",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "flowers",
+    "start": 19,
+    "end": 26,
+    "ws": "",
+    "lemma": "flower",
+    "pos": "NOUN",
+    "tag": "NNS",
+    "dep": "dobj",
+    "head": 2,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": ".",
+    "start": 26,
+    "end": 27,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 1,
+    "sent": 0
+   }
+  ]
+ },
+ "The woman who called you is my aunt.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "The",
+    "start": 0,
+    "end": 3,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "woman",
+    "start": 4,
+    "end": 9,
+    "ws": " ",
+    "lemma": "woman",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "nsubj",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "who",
+    "start": 10,
+    "end": 13,
+    "ws": " ",
+    "lemma": "who",
+    "pos": "PRON",
+    "tag": "WP",
+    "dep": "nsubj",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "called",
+    "start": 14,
+    "end": 20,
+    "ws": " ",
+    "lemma": "call",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "relcl",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "you",
+    "start": 21,
+    "end": 24,
+    "ws": " ",
+    "lemma": "you",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "dobj",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "is",
+    "start": 25,
+    "end": 27,
+    "ws": " ",
+    "lemma": "be",
+    "pos": "AUX",
+    "tag": "VBZ",
+    "dep": "ROOT",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": "my",
+    "start": 28,
+    "end": 30,
+    "ws": " ",
+    "lemma": "my",
+    "pos": "PRON",
+    "tag": "PRP$",
+    "dep": "poss",
+    "head": 7,
+    "sent": 0
+   },
+   {
+    "i": 7,
+    "text": "aunt",
+    "start": 31,
+    "end": 35,
+    "ws": "",
+    "lemma": "aunt",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "attr",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 8,
+    "text": ".",
+    "start": 35,
+    "end": 36,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 5,
+    "sent": 0
+   }
+  ]
+ },
+ "The girl who won the race smiled.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "The",
+    "start": 0,
+    "end": 3,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "girl",
+    "start": 4,
+    "end": 8,
+    "ws": " ",
+    "lemma": "girl",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "nsubj",
+    "head": 6,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "who",
+    "start": 9,
+    "end": 12,
+    "ws": " ",
+    "lemma": "who",
+    "pos": "PRON",
+    "tag": "WP",
+    "dep": "nsubj",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "won",
+    "start": 13,
+    "end": 16,
+    "ws": " ",
+    "lemma": "win",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "relcl",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "the",
+    "start": 17,
+    "end": 20,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "race",
+    "start": 21,
+    "end": 25,
+    "ws": " ",
+    "lemma": "race",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "dobj",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": "smiled",
+    "start": 26,
+    "end": 32,
+    "ws": "",
+    "lemma": "smile",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 6,
+    "sent": 0
+   },
+   {
+    "i": 7,
+    "text": ".",
+    "start": 32,
+    "end": 33,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 6,
+    "sent": 0
+   }
+  ]
+ },
+ "The dog that bit me barked loudly.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "The",
+    "start": 0,
+    "end": 3,
+    "ws": " ",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "dep": "det",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "dog",
+    "start": 4,
+    "end": 7,
+    "ws": " ",
+    "lemma": "dog",
+    "pos": "NOUN",
+    "tag": "NN",
+    "dep": "nsubj",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "that",
+    "start": 8,
+    "end": 12,
+    "ws": " ",
+    "lemma": "that",
+    "pos": "PRON",
+    "tag": "WDT",
+    "dep": "nsubj",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "bit",
+    "start": 13,
+    "end": 16,
+    "ws": " ",
+    "lemma": "bite",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "relcl",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "me",
+    "start": 17,
+    "end": 19,
+    "ws": " ",
+    "lemma": "I",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "dobj",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "barked",
+    "start": 20,
+    "end": 26,
+    "ws": " ",
+    "lemma": "bark",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": "loudly",
+    "start": 27,
+    "end": 33,
+    "ws": "",
+    "lemma": "loudly",
+    "pos": "ADV",
+    "tag": "RB",
+    "dep": "advmod",
+    "head": 5,
+    "sent": 0
+   },
+   {
+    "i": 7,
+    "text": ".",
+    "start": 33,
+    "end": 34,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 5,
+    "sent": 0
+   }
+  ]
+ },
+ "He said that he was sorry.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "He",
+    "start": 0,
+    "end": 2,
+    "ws": " ",
+    "lemma": "he",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "said",
+    "start": 3,
+    "end": 7,
+    "ws": " ",
+    "lemma": "say",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ROOT",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "that",
+    "start": 8,
+    "end": 12,
+    "ws": " ",
+    "lemma": "that",
+    "pos": "SCONJ",
+    "tag": "IN",
+    "dep": "mark",
+    "head": 4,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "he",
+    "start": 13,
+    "end": 15,
+    "ws": " ",
+    "lemma": "he",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 4,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "was",
+    "start": 16,
+    "end": 19,
+    "ws": " ",
+    "lemma": "be",
+    "pos": "AUX",
+    "tag": "VBD",
+    "dep": "ccomp",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": "sorry",
+    "start": 20,
+    "end": 25,
+    "ws": "",
+    "lemma": "sorry",
+    "pos": "ADJ",
+    "tag": "JJ",
+    "dep": "acomp",
+    "head": 4,
+    "sent": 0
+   },
+   {
+    "i": 6,
+    "text": ".",
+    "start": 25,
+    "end": 26,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 1,
+    "sent": 0
+   }
+  ]
+ },
+ "We know who did it.": {
+  "model": {
+   "name": "en_core_web_trf",
+   "version": "3.8.0"
+  },
+  "tokens": [
+   {
+    "i": 0,
+    "text": "We",
+    "start": 0,
+    "end": 2,
+    "ws": " ",
+    "lemma": "we",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "nsubj",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 1,
+    "text": "know",
+    "start": 3,
+    "end": 7,
+    "ws": " ",
+    "lemma": "know",
+    "pos": "VERB",
+    "tag": "VBP",
+    "dep": "ROOT",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 2,
+    "text": "who",
+    "start": 8,
+    "end": 11,
+    "ws": " ",
+    "lemma": "who",
+    "pos": "PRON",
+    "tag": "WP",
+    "dep": "nsubj",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 3,
+    "text": "did",
+    "start": 12,
+    "end": 15,
+    "ws": " ",
+    "lemma": "do",
+    "pos": "VERB",
+    "tag": "VBD",
+    "dep": "ccomp",
+    "head": 1,
+    "sent": 0
+   },
+   {
+    "i": 4,
+    "text": "it",
+    "start": 16,
+    "end": 18,
+    "ws": "",
+    "lemma": "it",
+    "pos": "PRON",
+    "tag": "PRP",
+    "dep": "dobj",
+    "head": 3,
+    "sent": 0
+   },
+   {
+    "i": 5,
+    "text": ".",
+    "start": 18,
+    "end": 19,
+    "ws": "",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "dep": "punct",
+    "head": 1,
+    "sent": 0
+   }
+  ]
+ }
+}
