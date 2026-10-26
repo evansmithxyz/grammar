@@ -51,7 +51,7 @@ function hostBoard() {
 // other hosts, so the page uses the built-in rules there.
 const LOCAL = ['localhost', '127.0.0.1', '[::1]'].includes(location.hostname) || location.protocol === 'file:';
 const PARSER_URL = (import.meta.env.VITE_PARSER_URL || (LOCAL ? 'http://localhost:8000' : '/api')).replace(/\/$/, '');
-const server = { state: 'checking', model: null, ms: null }; // checking | ready | off
+const server = { state: 'checking', model: null, ms: null, busy: false }; // state: checking | ready | off
 
 const state = {
   text: '',
@@ -316,18 +316,26 @@ const wait = (ms) => new Promise((r) => setTimeout(r, ms));
 let parseSeq = 0;
 let inflight = null;
 
+// Past this many words the quick in-browser parse gets rough (words left
+// loose), so with spaCy available a long sentence waits for spaCy's parse.
+const LONG_SENTENCE = 15;
+
 /**
- * Parse and show a sentence. With the server on, typing shows the instant
- * in-browser parse and swaps in the server's when it arrives; an animated load
- * (Enter, an example) waits briefly so it draws once, with the server's parse.
+ * Parse and show a sentence. With the server on, typing a short sentence shows
+ * the instant in-browser parse and swaps in the server's when it arrives; a
+ * long one, and an animated load (Enter, an example), wait for the server's
+ * parse so it draws once, falling back to the in-browser one if it's slow.
+ * The sentence becomes the current one only when a parse of it is shown.
  */
 function setText(text, { animate = true, fromHash = null } = {}) {
   const seq = ++parseSeq;
   inflight?.abort();
   inflight = null;
-  state.text = text;
+  setBusy(false);
   const local = () => (text.trim() ? parse(text) : { tokens: [], units: [] });
   const show = (res, source, anim) => {
+    setBusy(false);
+    state.text = text;
     apply(res, source, fromHash);
     render({ animate: anim, flip: anim });
   };
@@ -349,17 +357,28 @@ function setText(text, { animate = true, fromHash = null } = {}) {
     apply(res, 'server', fromHash);
     render();
   };
-  if (animate) {
-    Promise.race([remote.catch(fail), wait(3000).then(() => 'slow')]).then((res) => {
+  const long = text.trim().split(/\s+/).length > LONG_SENTENCE;
+  if (animate || long) {
+    // the old diagram stays up, dimmed, until the server answers
+    setBusy(true);
+    Promise.race([remote.catch(fail), wait(long ? 8000 : 3000).then(() => 'slow')]).then((res) => {
       if (seq !== parseSeq) return;
-      if (res && res !== 'slow') return show(res, 'server', true);
-      show(local(), 'rules', true);
+      if (res && res !== 'slow') return show(res, 'server', animate);
+      show(local(), 'rules', animate);
       if (res === 'slow') remote.then(swapIn, fail);
     });
   } else {
     show(local(), 'rules', false);
     remote.then(swapIn, fail);
   }
+}
+
+/** While a parse is on its way from the server: dim what's shown and say so by the Parser menu. */
+function setBusy(on) {
+  if (server.busy === on) return;
+  server.busy = on;
+  document.body.classList.toggle('parsing', on);
+  showParser();
 }
 
 function apply(res, source, fromHash) {
@@ -429,9 +448,10 @@ function showParser() {
   if (server.state === 'checking') {
     status.textContent = `Connecting to ${host}…`;
   } else if (server.state === 'ready') {
-    status.classList.add('ok');
+    status.classList.add(server.busy ? 'busy' : 'ok');
     const m = server.model ? `${server.model.name} ${server.model.version}` : 'spaCy';
-    status.textContent = state.source === 'server' && server.ms != null ? `${m} · ${Math.round(server.ms)} ms` : m;
+    status.textContent = server.busy ? 'Parsing…'
+      : state.source === 'server' && server.ms != null ? `${m} · ${Math.round(server.ms)} ms` : m;
     note.textContent = 'Parsed by spaCy’s transformer model, a neural network trained on hand-annotated English. Read a word differently? Drag it where you think it goes.';
     return;
   } else {

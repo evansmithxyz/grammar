@@ -222,6 +222,12 @@ select {
 .parser-status::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--faint); }
 .parser-status.ok::before { background: var(--ok); }
 .parser-status.off::before { background: var(--danger); }
+.parser-status.busy::before { background: #e0b000; animation: parse-pulse 0.9s ease-in-out infinite alternate; }
+@keyframes parse-pulse { from { opacity: 0.25; } }
+@media (prefers-reduced-motion: reduce) { .parser-status.busy::before { animation: none; } }
+/* the previous sentence stays up, dimmed, until the parse server answers */
+#strip, #diagram { transition: opacity 0.2s; }
+body.parsing #strip, body.parsing #diagram { opacity: 0.4; }
 
 /* the sentence, marked up the way a teacher would */
 .strip {
