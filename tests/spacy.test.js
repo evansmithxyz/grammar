@@ -32,9 +32,19 @@ const EXPECT = {
   'The children laughed, sang, and danced.': ['conj(laughed)=sang', 'conj(laughed)=danced', 'cc(danced)=and'],
   'The house in which I live is old.': ['relcl(house)=live', 'pobj(in)=which'],
   'When asked about the plan, the senators were silent.': ['advcl(were)=(were) asked', 'subj((were) asked)=senators'],
+  // spaCy hangs a shared object on the last verb; it belongs to both...
+  'John washed and waxed the car.': ['conj(washed)=waxed', 'dobj(washed)=car'],
+  // ...unless the first verb is one often used without an object
+  'He laughed and ate an apple.': ['conj(laughed)=ate', 'dobj(ate)=apple'],
+  // spaCy: "provided" is a preposition with the clause as its object
+  'You may leave early, provided you finish your work.': ['advcl(may leave)=finish', 'mark(finish)=provided', 'subj(finish)=you'],
+  'She walked up and down the street.': ['prep(walked)=up and down', 'pobj(up and down)=street'],
+  'The problem was dealt with quickly.': ['root()=was dealt with', 'subj(was dealt with)=problem'],
+  'We hire such workers as we need.': ['relcl(workers)=need', 'dobj(need)=as', 'subj(need)=we'],
 };
 
-EXPECT['Judgment in Cases of Impeachment shall not extend further than to removal from Office, and disqualification to hold and enjoy any Office of honor, Trust or Profit under the United States: but the Party convicted shall nevertheless be liable and subject to Indictment, Trial, Judgment and Punishment, according to Law.'] = ['conj(hold)=enjoy', 'dobj(enjoy)=Office', 'conj(liable)=subject', 'conj(removal)=disqualification'];
+// "to hold and enjoy" share "any Office"
+EXPECT['Judgment in Cases of Impeachment shall not extend further than to removal from Office, and disqualification to hold and enjoy any Office of honor, Trust or Profit under the United States: but the Party convicted shall nevertheless be liable and subject to Indictment, Trial, Judgment and Punishment, according to Law.'] = ['conj(hold)=enjoy', 'dobj(hold)=Office', 'conj(liable)=subject', 'conj(removal)=disqualification'];
 
 // the passage the reduced-clause and compound-sentence fixes came from
 const CONSTITUTION = 'The Senate shall have the sole Power to try all Impeachments. When sitting for that Purpose, they shall be on Oath or Affirmation. When the President of the United States is tried, the Chief Justice shall preside: And no Person shall be convicted without the Concurrence of two thirds of the Members present.';
@@ -52,10 +62,16 @@ EXPECT["No State shall, without the Consent of the Congress, lay any Imposts or 
 // Article II, Section 2: three clauses. "shall appoint" belongs to "he shall
 // nominate", not to the first clause; joined clauses with their own subjects
 // were drawn twice (as clauses and as parts of a verb fork), and a list with
-// two "and"s left one floating
+// two "and"s left one floating. Also: he nominates the officers as well as
+// appointing them; "to make Treaties" says which Power; "by and with" share
+// one object; "provided" joins a clause; "as they think proper" is a relative
+// clause after "such", with "proper" a complement, never an object
 EXPECT['He shall have Power, by and with the Advice and Consent of the Senate, to make Treaties, provided two thirds of the Senators present concur; and he shall nominate, and by and with the Advice and Consent of the Senate, shall appoint Ambassadors, other public Ministers and Consuls, Judges of the supreme Court, and all other Officers of the United States, whose Appointments are not herein otherwise provided for, and which shall be established by Law: but the Congress may by Law vest the Appointment of such inferior Officers, as they think proper, in the President alone, in the Courts of Law, or in the Heads of Departments.'] = [
   'conj(shall have)=shall nominate', 'conj(shall nominate)=shall appoint', 'conj(shall have)=may vest',
   'cc(shall nominate)=and', 'cc(shall appoint)=and', 'cc(may vest)=but', 'cc(Consuls)=and', 'cc(Officers)=and',
+  'dobj(shall nominate)=Ambassadors', 'mod(Power)=make', 'prep(shall have)=by and with', 'prep(shall appoint)=by and with',
+  'advcl(shall have)=concur', 'mark(concur)=provided', 'relcl(Officers)=are provided for',
+  'relcl(Officers)=think', 'dobj(think)=as', 'ocomp(think)=proper',
 ];
 
 test('fixtures are present (run scripts/capture-spacy.mjs with the server up)', () => {

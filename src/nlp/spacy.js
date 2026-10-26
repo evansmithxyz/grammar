@@ -15,6 +15,14 @@ const CONTRACTIONS = { "n't": 'not', "'re": 'are', "'m": 'am', "'ll": 'will', "'
 const WH_TAGS = new Set(['WDT', 'WP', 'WP$', 'WRB']);
 const CLAUSE_RELS = new Set(['root', 'advcl', 'relcl', 'conj', 'dobj', 'subj', 'pred']);
 const SUBORDINATING_ADVERBS = /^(when|whenever|where|wherever|while|as|once|until|till|because|since|before|after|if|unless|though|although)$/;
+// Verbs often used with no object: in "laughed and ate an apple" the object is
+// only the second verb's
+const INTRANSITIVE = new Set([
+  'agree', 'appear', 'arrive', 'come', 'cook', 'cough', 'cry', 'dance', 'die', 'disappear', 'draw', 'drink', 'eat',
+  'exist', 'fall', 'fly', 'go', 'happen', 'jump', 'laugh', 'leave', 'lie', 'listen', 'live', 'look', 'nod', 'occur',
+  'paint', 'play', 'pray', 'read', 'remain', 'rest', 'return', 'rise', 'run', 'shout', 'sing', 'sit', 'sleep', 'smile',
+  'speak', 'stand', 'stay', 'study', 'swim', 'talk', 'travel', 'vote', 'wait', 'walk', 'wave', 'win', 'work', 'write',
+]);
 
 /** How a token reads on the diagram: contractions are spelled out. */
 function displayText(t) {
@@ -71,7 +79,8 @@ function relation(dep, t, head) {
     case 'oprd': return 'ocomp';
     case 'prep': case 'agent': return 'prep';
     case 'pobj': case 'pcomp': return 'pobj';
-    case 'ccomp': return isVerbTok(head) ? 'dobj' : 'advcl';
+    // an adjective is never an object ("as they think proper")
+    case 'ccomp': return t.pos === 'ADJ' ? 'ocomp' : isVerbTok(head) ? 'dobj' : 'advcl';
     case 'xcomp': return isVerbTok(t) ? 'dobj' : 'pred';
     case 'advcl': return 'advcl';
     case 'relcl': return 'relcl';
@@ -126,6 +135,31 @@ export function fromSpacy(text, data) {
     if (t.head === t.i && t.dep !== 'ROOT') t.dep = 'ROOT';
   }
 
+  // Repairs to spaCy's tree, made before words are grouped.
+  const under = (t) => kept.filter((k) => k.head === t.i && k.i !== t.i);
+  for (const t of kept) {
+    const h = byIndex.get(t.head);
+    if (!h || h === t) continue;
+    // "provided two thirds … concur": spaCy makes "provided" a preposition with
+    // the clause as its object. A clause with its own subject, brought in by
+    // one word, is an adverb clause and the word is its conjunction. A wh-
+    // subject ("except what may be necessary") makes a noun clause, which stays.
+    if (t.dep === 'pcomp' && isVerbTok(t) && h.dep === 'prep') {
+      const subjects = under(t).filter((k) => /^nsubj/.test(k.dep));
+      if (subjects.length && !subjects.some((s) => WH_TAGS.has(s.tag)) && !under(t).some((k) => k.dep === 'mark')) {
+        Object.assign(t, { head: h.head, dep: 'advcl' });
+        Object.assign(h, { head: t.i, dep: 'mark', pos: 'SCONJ', tag: 'IN' });
+      }
+    }
+    // "Power, by and with …, to make Treaties": an infinitive spaCy can't give
+    // a job ("dep"), hung on a verb whose object comes before it, tells which
+    // one the object is
+    if (t.dep === 'dep' && isVerbTok(t) && under(t).some((k) => k.tag === 'TO')) {
+      const obj = under(h).find((k) => k.dep === 'dobj' && k.i < t.i && (k.pos === 'NOUN' || k.pos === 'PROPN'));
+      if (obj) Object.assign(t, { head: obj.i, dep: 'acl' });
+    }
+  }
+
   // the app's tokens, indexed 0..n-1 across all sentences
   const index = new Map(kept.map((t, k) => [t.i, k]));
   const tokens = kept.map((t, k) => {
@@ -147,15 +181,27 @@ export function fromSpacy(text, data) {
 
   // Group tokens into units: helping verbs and particles join their verb
   // ("has been running", "gave up"); runs of proper nouns join ("New York").
+  // A preposition with no object right after its verb joins it too ("are
+  // provided for"), and two prepositions sharing one object are one unit on
+  // one slant ("by and with the Advice"; spaCy gives the object to just one).
   const parent = kept.map((_, k) => k);
   const find = (k) => (parent[k] === k ? k : (parent[k] = find(parent[k])));
   const join = (a, b) => { parent[find(a)] = find(b); };
+  const hasObject = (t) => under(t).some((k) => k.dep === 'pobj' || k.dep === 'pcomp');
   kept.forEach((t, k) => {
     const h = byIndex.get(t.head);
     if (!h || t.head === t.i) return;
     const hk = index.get(t.head);
     if (((t.dep === 'aux' || t.dep === 'auxpass') && t.tag !== 'TO') || t.dep === 'prt') join(k, hk);
     else if (t.dep === 'compound' && t.pos === 'PROPN' && h.pos === 'PROPN') join(k, hk);
+    else if (t.dep === 'prep' && isVerbTok(h) && t.i === h.i + 1 && !under(t).length) join(k, hk);
+    else if (t.dep === 'conj' && t.pos === 'ADP' && h.pos === 'ADP' && t.i === h.i + 2) {
+      const cc = byIndex.get(h.i + 1);
+      if (cc && cc.dep === 'cc' && cc.head === h.i && index.has(cc.i) && !(hasObject(h) && hasObject(t))) {
+        join(k, hk);
+        join(index.get(cc.i), hk);
+      }
+    }
   });
 
   const groups = new Map();
@@ -207,6 +253,27 @@ export function fromSpacy(text, data) {
     }
   }
 
+  // "such inferior Officers, as they think proper": after "such", "as" is a
+  // relative pronoun (the officers that they think proper), so the clause
+  // describes the noun, with "as" as its subject or object. spaCy reads it as
+  // an adverb clause on the verb.
+  const within = (u, top) => {
+    for (let c = u, n = 0; c && n < 50; c = c.headRef, n++) if (c === top) return true;
+    return false;
+  };
+  for (const u of units) {
+    if (u.rel !== 'advcl' || !u.verbal || !u.headRef) continue;
+    const marks = kidsOf(u, 'mark');
+    const as = marks.find((m) => tokens[m.anchor].norm === 'as');
+    if (!as || marks.some((m) => tokens[m.anchor].pos === 'TO')) continue;
+    const slot = !ownSubject(u) ? 'subj' : !kidsOf(u, 'dobj').length ? 'dobj' : null;
+    const noun = units.filter((n) => (n.pos === 'NOUN' || n.pos === 'PROPN') && n.tokens[0] < as.tokens[0]
+      && within(n, u.headRef) && kidsOf(n, 'mod').some((m) => tokens[m.anchor].norm === 'such')).at(-1);
+    if (!slot || !noun) continue;
+    Object.assign(u, { rel: 'relcl', headRef: noun });
+    Object.assign(as, { rel: slot, pos: 'PRON', relPron: true });
+  }
+
   for (const u of units) {
     // an object complement needs an object to describe: spaCy's "oprd" after a
     // linking verb ("He seems tired") is a subject complement
@@ -235,6 +302,24 @@ export function fromSpacy(text, data) {
       const pick = next(own) || next(up) || own.at(-1) || up.at(-1);
       if (pick) u.headRef = pick;
     }
+  }
+
+  // "he shall nominate, and … shall appoint Ambassadors": a tree can't give a
+  // word two heads, so spaCy hangs an object shared by joined verbs on the
+  // last one. When the verbs before it end with nothing after them, the object
+  // is theirs too; it goes on the first verb, and the layout draws it after
+  // the verbs rejoin.
+  const lastTok = (u) => Math.max(...u.tokens);
+  const bare = (v) => !INTRANSITIVE.has(kept[v.anchor].lemma?.toLowerCase())
+    && !kidsOf(v).some((k) => /^(dobj|ocomp|pred)$/.test(k.rel) || (!/^(conj|cc)$/.test(k.rel) && k.tokens[0] > lastTok(v)));
+  for (const v of units) {
+    if (!v.verbal || (v.rel === 'conj' && !ownSubject(v))) continue;
+    const parts = kidsOf(v, 'conj').filter((c) => c.verbal && !ownSubject(c));
+    if (!parts.length) continue;
+    const last = parts.at(-1);
+    const objs = kidsOf(last).filter((k) => /^(dobj|ocomp)$/.test(k.rel) && k.tokens[0] > lastTok(last));
+    if (!objs.length || kidsOf(last, 'pred').length || ![v, ...parts.slice(0, -1)].every(bare)) continue;
+    for (const o of objs) o.headRef = v;
   }
 
   // relative pronouns point back at the noun the clause modifies

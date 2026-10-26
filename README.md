@@ -147,7 +147,9 @@ With the parse server running (the default), parses come from spaCy's `en_core_w
 on hand-annotated English. On its benchmark (OntoNotes 5, modern English) it attaches 95.2% of words to the right
 word, and 93.8% with the right job as well. Long sentences, like the Constitution passages in the tests, come out right
 or nearly right; what it misses is mostly judgment calls: which word a prepositional phrase belongs to, how far an
-"and" reaches, and old or unusual phrasing ("provided two thirds … concur").
+"and" reaches, and old or unusual phrasing. The conversion repairs a few patterns it gets wrong: "provided two thirds
+… concur" as a clause, "such Officers, as they think proper" as a relative clause, an object shared by joined verbs
+("nominate, and … appoint Ambassadors") and "by and with" as one preposition.
 
 The built-in rules, used when the server isn't running, handle everyday sentences and are rougher on long ones:
 comparisons ("taller than his brother"), ellipsis, clefts and absolute phrases come out approximately.
