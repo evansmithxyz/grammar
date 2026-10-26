@@ -218,7 +218,7 @@ for (const b of ['Notebook', 'Textbook', 'Chalk']) {
 }
 
 // 4. fix the parse
-await caption('The parser guesses; you can correct it', '“I saw the man with the telescope” can be read two ways');
+await caption('Read it differently? Show your reading', '“I saw the man with the telescope” can be read two ways');
 await typeSentence('I saw the man with the telescope.', 26);
 await sleep(3300);
 await click(await find('word', 'with'), 900);

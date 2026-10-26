@@ -418,7 +418,7 @@ function showParser() {
   const status = $('parser-status');
   const note = $('parser-note');
   const host = /^https?:/.test(PARSER_URL) ? PARSER_URL.replace(/^https?:\/\//, '') : location.host + PARSER_URL;
-  const rulesNote = 'Parsed in your browser by a set of grammar rules. When it gets a word wrong, drag the word where it belongs.';
+  const rulesNote = 'Parsed in your browser by built-in grammar rules: fine for everyday sentences, rougher on long ones. The spaCy parse server does better.';
   status.className = 'parser-status';
   status.title = '';
   if (framed || state.parser === 'rules') {
@@ -432,7 +432,7 @@ function showParser() {
     status.classList.add('ok');
     const m = server.model ? `${server.model.name} ${server.model.version}` : 'spaCy';
     status.textContent = state.source === 'server' && server.ms != null ? `${m} · ${Math.round(server.ms)} ms` : m;
-    note.textContent = 'Parsed by spaCy on your parse server. When it gets a word wrong, drag the word where it belongs.';
+    note.textContent = 'Parsed by spaCy’s transformer model, a neural network trained on hand-annotated English. Read a word differently? Drag it where you think it goes.';
     return;
   } else {
     status.classList.add('off');

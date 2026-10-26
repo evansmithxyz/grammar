@@ -1,7 +1,7 @@
 # Sentence Diagrammer
 
-Type a sentence and watch it diagrammed Reed–Kellogg style, live in the browser. Then argue with it: drag any word onto
-another to re-attach it, or click a word to change its job.
+Type a sentence and watch it diagrammed Reed–Kellogg style, live in the browser. Read it differently? Drag any word onto
+another to show your reading, or click a word to change its job.
 
 A few JavaScript effects do real work here: [Rough.js](https://roughjs.com) draws the diagram by hand, the sentence is
 marked up like a teacher's red pen (in the spirit of Rough Notation), lines draw themselves so you see the structure
@@ -141,12 +141,20 @@ text ─▶ tagger ─▶ parser ─▶ graph ─▶ layout ─▶ renderer
 - `src/diagram/render.js`, `arcs.js`, `themes.js`: SVG output, the arc view and the three styles.
 - `src/ui/*`: the sentence strip, inspector, Key panel, drag and drop, practice mode and export.
 
-## Limits
+## How accurate it is
 
-The parser is a set of rules, not a trained model, so some sentences come out wrong. Prepositional-phrase attachment
-is a guess ("I saw the man with the telescope"), and constructions like comparisons ("taller than his brother"),
-ellipsis, clefts and absolute phrases are drawn approximately. That's what the editing is for: drag the pieces where
-they belong.
+With the parse server running (the default), parses come from spaCy's `en_core_web_trf`, a transformer model trained
+on hand-annotated English. On its benchmark (OntoNotes 5, modern English) it attaches 95.2% of words to the right
+word, and 93.8% with the right job as well. Long sentences, like the Constitution passages in the tests, come out right
+or nearly right; what it misses is mostly judgment calls: which word a prepositional phrase belongs to, how far an
+"and" reaches, and old or unusual phrasing ("provided two thirds … concur").
+
+The built-in rules, used when the server isn't running, handle everyday sentences and are rougher on long ones:
+comparisons ("taller than his brother"), ellipsis, clefts and absolute phrases come out approximately.
+
+Some sentences have more than one right reading ("I saw the man with the telescope"), and every diagram can be
+changed: drag a word to show the reading you mean. The lesson sentences in Guided, Practice and From scratch are
+checked against both parsers and by hand, so the lessons don't depend on the parser being right.
 
 ## Open questions
 

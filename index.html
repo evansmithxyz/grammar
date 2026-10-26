@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sentence Diagrammer</title>
-    <meta name="description" content="Type a sentence and see it diagrammed Reed–Kellogg style. Learn it step by step in Guided mode, drag words to fix the parse, practice filling in diagrams, and export SVG or PNG." />
+    <meta name="description" content="Type a sentence and see it diagrammed Reed–Kellogg style. Learn it step by step in Guided mode, drag words to show your own reading, practice filling in diagrams, and export SVG or PNG." />
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2312151b'/%3E%3Cpath d='M4 15h24M13 8v13M18 15l5 9' stroke='%23e7eaf0' stroke-width='2.6' stroke-linecap='round' fill='none'/%3E%3C/svg%3E" />
   </head>
   <body>
@@ -44,7 +44,7 @@
             </select>
             <span class="parser-status" id="parser-status"></span>
           </span>
-          <p class="note" id="parser-note">Parsed in your browser by a set of grammar rules. When it gets a word wrong, drag the word where it belongs.</p>
+          <p class="note" id="parser-note">Parsed in your browser by built-in grammar rules: fine for everyday sentences, rougher on long ones. The spaCy parse server does better.</p>
         </div>
       </section>
 
@@ -151,8 +151,10 @@
 
     <footer class="wrap foot">
       <p>
-        Parsing by <a href="https://github.com/spencermountain/compromise">compromise</a> and a hand-written clause
-        parser. Lines by <a href="https://roughjs.com">Rough.js</a>. Diagram conventions from Reed &amp; Kellogg,
+        Parsing by <a href="https://spacy.io">spaCy</a>’s transformer model, with
+        <a href="https://github.com/spencermountain/compromise">compromise</a> and hand-written grammar rules in the
+        browser when the parse server is away. Lines by <a href="https://roughjs.com">Rough.js</a>. Diagram conventions
+        from Reed &amp; Kellogg,
         <i>Higher Lessons in English</i> (1877).
       </p>
     </footer>

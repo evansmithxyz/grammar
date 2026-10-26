@@ -104,15 +104,15 @@ export class Inspector {
     const floats = g ? g.units.filter((u) => u.rel === 'float').length : 0;
     this.root.innerHTML = `
       <p class="eyebrow">No word selected</p>
-      <h3>Fix the parse by hand</h3>
-      <p>The parser sometimes guesses wrong. You can correct it.</p>
+      <h3>Change the diagram</h3>
+      <p>Every diagram can be changed. Read a sentence differently? Move its words to show your reading.</p>
       <ul>
         <li><b>Drag</b> a word onto another word to make it hang from that word.</li>
         <li><b>Click</b> a word to see its job and change it.</li>
         <li><b>Hover</b> a word to find it in the sentence.</li>
         <li><kbd>Ctrl</kbd> <kbd>Z</kbd> undoes. <kbd>Esc</kbd> deselects.</li>
       </ul>
-      ${floats ? `<div class="tip"><b>${floats} unattached word${floats > 1 ? 's' : ''}</b> float${floats > 1 ? '' : 's'} above the diagram. Drag ${floats > 1 ? 'them' : 'it'} into place.</div>` : '<div class="tip"><b>Ambiguous?</b> “I saw the man with the telescope” can hang <i>with</i> on <i>saw</i> or on <i>man</i>. Try both.</div>'}
+      ${floats ? `<div class="tip"><b>${floats} unattached word${floats > 1 ? 's' : ''}</b> float${floats > 1 ? '' : 's'} above the diagram. Drag ${floats > 1 ? 'them' : 'it'} into place.</div>` : '<div class="tip"><b>Ambiguous?</b> “I saw the man with the telescope” can hang <i>with</i> on <i>saw</i> or on <i>man</i>. Both readings are right; drag it to show the one you mean.</div>'}
     `;
   }
 
@@ -128,7 +128,7 @@ export class Inspector {
         <li><b>Change your mind:</b> drag a word onto a different word, or back to the tray.</li>
         <li><b>Check</b> outlines each word in green or red.</li>
       </ul>
-      <div class="tip"><b>Answers come from the parser.</b> The built-in examples are reliable; on your own sentences the parser can be wrong too.</div>
+      <div class="tip"><b>Where the answers come from.</b> Lesson sentences are checked by hand. On a sentence of your own, the answer is the parser’s reading of it.</div>
     `;
   }
 
