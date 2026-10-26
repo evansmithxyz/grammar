@@ -236,7 +236,9 @@ await click(await find('at', '#view-seg button', 'Diagram'), 900);
 // 6. a long sentence: zoom and pan
 await caption('Long sentences too', 'Article II, Section 2 of the Constitution, parsed by spaCy’s transformer model');
 await click(await find('at', '#sentence'), 150);
-await page.$eval('#sentence', (el, t) => { el.value = t; el.dispatchEvent(new Event('input', { bubbles: true })); }, ARTICLE_II);
+// set the text without an input event: Enter alone waits for spaCy's parse,
+// instead of flashing the quick in-browser one first
+await page.$eval('#sentence', (el, t) => { el.value = t; }, ARTICLE_II);
 await sleep(400);
 await page.keyboard.press('Enter');
 await sleep(1200);
