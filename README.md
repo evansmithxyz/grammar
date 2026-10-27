@@ -1,7 +1,7 @@
 # Sentence Diagrammer
 
 Type a sentence and watch it diagrammed Reed–Kellogg style, live in the browser. Read it differently? Drag any word onto
-another to show your reading, or click a word to change its job.
+another to show your reading, or click a word to change its job. It's live at https://evansmith.xyz/diagrammer/.
 
 A few JavaScript effects do real work here: [Rough.js](https://roughjs.com) draws the diagram by hand, the sentence is
 marked up like a teacher's red pen (in the spirit of Rough Notation), lines draw themselves so you see the structure
@@ -76,6 +76,10 @@ scripts/deploy.sh root@203.0.113.7           # later: uploads the new build and 
   `journalctl -u sentence-grapher-parser`. The site lives in `/srv/sentence-grapher`, the server in
   `/opt/sentence-grapher`, and the config in `deploy/`. (These internal names, like the npm package name, keep
   the app's first name, Sentence Grapher.)
+- On evansmith.xyz the site is at `/diagrammer/`, beside a homepage and other projects. That server's Caddy config
+  comes from the homesite repo (`../homesite`), not `deploy/Caddyfile`. `scripts/deploy.sh root@13.140.235.138` still
+  updates the site and the parse server there, but **don't use `--setup` on it**: that installs `deploy/Caddyfile`,
+  which serves this site at the root and drops the homepage. If it happens, run `../homesite/scripts/deploy.sh` again.
 
 ## What it does
 

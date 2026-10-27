@@ -36,4 +36,6 @@ tar -C dist -cf - . | ssh "$HOST" 'set -e
   rm -rf /srv/sentence-grapher.old'
 
 site=$(ssh "$HOST" '. /etc/sentence-grapher.env 2>/dev/null; echo "${DOMAIN:-}"')
-if [ -n "$site" ]; then echo "== Done: https://$site/"; else echo "== Done: http://${HOST#*@}/"; fi
+# on a server whose Caddyfile comes from ../homesite, a homepage has the root and the site is in /diagrammer/
+folder=$(ssh "$HOST" 'grep -qs "handle_path /diagrammer/" /etc/caddy/Caddyfile && echo diagrammer/ || true')
+if [ -n "$site" ]; then echo "== Done: https://$site/$folder"; else echo "== Done: http://${HOST#*@}/$folder"; fi

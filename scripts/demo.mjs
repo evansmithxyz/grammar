@@ -10,7 +10,7 @@ import puppeteer from 'puppeteer-core';
 import { mkdirSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 
-const URL = process.env.DEMO_URL || 'https://evansmith.xyz/';
+const URL = process.env.DEMO_URL || 'https://evansmith.xyz/diagrammer/';
 const CHROME = process.env.CHROME || 'C:/Program Files/Google/Chrome/Application/chrome.exe';
 const OUT = 'demo';
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -304,7 +304,7 @@ await click(await find('at', '#sc-check'), 2800);
 
 // 10. end
 await caption('', '');
-await card('Sentence Diagrammer', 'evansmith.xyz');
+await card('Sentence Diagrammer', 'evansmith.xyz/diagrammer');
 await sleep(3800);
 await rec.stop();
 await browser.close();
