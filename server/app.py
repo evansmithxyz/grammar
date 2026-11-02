@@ -25,7 +25,8 @@ MAX_CHARS = 1000
 # Loading takes a few seconds, so do it once when the server starts.
 nlp = spacy.load(MODEL, exclude=["ner"])
 
-app = FastAPI(title="Sentence Diagrammer parser")
+# openapi_url=None also turns off the /docs and /redoc pages built on it
+app = FastAPI(title="Sentence Diagrammer parser", openapi_url=None)
 app.add_middleware(
     CORSMiddleware,
     # the Vite dev server and `vite preview`
